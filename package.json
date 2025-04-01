@@ -2,7 +2,10 @@
   "name": "nodejs-web-app8",
   "version": "0.0.0",
   "description": "NodejsWebApp8",
-  "main": "server.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "author": {
     "name": ""
   },
