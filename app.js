@@ -3,7 +3,7 @@ console.log('Updated PATH:', process.env.PATH);
 
 const express = require('express');
 const path = require('path');
-const ADODB = require('node-adodb');
+
 
 const app = express();
 
@@ -16,8 +16,8 @@ exec('C:\\WINDOWS\\SysWOW64\\cscript.exe //Nologo "C:\\Users\\Erazer\\Desktop\\t
     console.log(`Output: ${stdout}`);
 });
 
-// Cambia la ruta a la ubicación de tu archivo de base de datos Access
-const connection = ADODB.open('Provider=Microsoft.ACE.OLEDB.12.0;Data Source=public\\Cars.accdb;', process.arch.includes('64'));
+// Cambia la ruta a la ubicaciÃ³n de tu archivo de base de datos Access
+
 // Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
 
