@@ -8,13 +8,6 @@ const path = require('path');
 const app = express();
 
 const { exec } = require('child_process');
-exec('C:\\WINDOWS\\SysWOW64\\cscript.exe //Nologo "C:\\Users\\Erazer\\Desktop\\test1.vbs"', (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error executing cscript: ${error}`);
-        return;
-    }
-    console.log(`Output: ${stdout}`);
-});
 
 // Cambia la ruta a la ubicación de tu archivo de base de datos Access
 
