@@ -1999,6 +1999,9 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+     .cookie-consent {
+     bottom: 100px; /* Increase this value as needed to clear the modal */
+ }
     body {
         font-size: 14px; /* Reduce overall font size */
     }
