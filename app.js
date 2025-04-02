@@ -9,7 +9,7 @@ const app = express();
 
 const { exec } = require('child_process');
 
-// Cambia la ruta a la ubicación de tu archivo de base de datos Access
+
 
 // Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
