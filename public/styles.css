@@ -60,6 +60,7 @@ header {
     align-items: center;
     gap: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     pointer-events: auto;
     cursor: pointer;
     text-decoration: none;
@@ -103,6 +104,11 @@ header {
 }
 
 >>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
+=======
+    color: white;
+}
+
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
     .contact-strip i {
         margin-right: 6px;
         transition: transform 0.3s ease;
@@ -139,6 +145,7 @@ header {
 
 .social-pillar {
     position: fixed;
+<<<<<<< HEAD
 <<<<<<< HEAD
     top: 50%;
     left: 0;
@@ -206,6 +213,8 @@ header {
     }
 }
 =======
+=======
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
     left: 10px; /* Slight inset from left edge */
     top: 50%;
     transform: translateY(-50%); /* Vertically centered */
@@ -241,6 +250,9 @@ header {
     .social-pillar a img:hover {
         transform: scale(1.1); /* Slight enlarge on hover */
     }
+<<<<<<< HEAD
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
+=======
 >>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
 .branding {
     display: flex;
@@ -285,6 +297,7 @@ header {
     }
 }
 /* Container for the new text section */
+<<<<<<< HEAD
 <<<<<<< HEAD
 #map-section {
     position: relative;
@@ -387,6 +400,8 @@ text[text-anchor="middle"]:nth-of-type(5) {
 }
 =======
 >>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
+=======
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
 .importer-text {
     background: #1b1b1b; /* Dark background to match your site */
     padding: 60px 20px;
@@ -397,7 +412,11 @@ text[text-anchor="middle"]:nth-of-type(5) {
 /* Inner content area, centered with a max width */
 .importer-text-content {
 <<<<<<< HEAD
+<<<<<<< HEAD
     max-width: 100%;
+=======
+    max-width: 900px;
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
 =======
     max-width: 900px;
 >>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
@@ -2215,8 +2234,11 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
      .cookie-consent {
      bottom: 100px; /* Increase this value as needed to clear the modal */
  }
@@ -2225,6 +2247,9 @@ footer {
         bottom: 100px; /* Increase this value as needed to clear the modal */
     }
 >>>>>>> 73defe0 (Initial commit)
+<<<<<<< HEAD
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
+=======
 >>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
     body {
         font-size: 14px; /* Reduce overall font size */

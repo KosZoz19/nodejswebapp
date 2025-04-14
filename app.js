@@ -9,6 +9,7 @@ const app = express();
 
 const { exec } = require('child_process');
 <<<<<<< HEAD
+<<<<<<< HEAD
 exec('C:\\WINDOWS\\SysWOW64\\cscript.exe //Nologo "C:\\Users\\Erazer\\Desktop\\test1.vbs"', (error, stdout, stderr) => {
     if (error) {
         console.error(`Error executing cscript: ${error}`);
@@ -18,6 +19,10 @@ exec('C:\\WINDOWS\\SysWOW64\\cscript.exe //Nologo "C:\\Users\\Erazer\\Desktop\\t
 });
 
 // Cambia la ruta a la ubicaci�n de tu archivo de base de datos Access
+=======
+
+
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
 =======
 
 
