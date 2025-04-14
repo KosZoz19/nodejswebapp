@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-web-app8",
+  "version": "0.0.0",
+  "description": "NodejsWebApp8",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {},
+  "dependencies": {
+<<<<<<< HEAD
+    "@emailjs/browser": "^4.4.1",
+    "express": "^5.1.0"
+  }
+}
+=======
+    "express": "^5.1.0"
+  }
+}
+>>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
