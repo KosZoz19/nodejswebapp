@@ -517,72 +517,43 @@ text[text-anchor="middle"]:nth-of-type(5) {
 
 /* Sidebar Navigation (fixed on right side) */
 @media screen and (max-width: 480px) {
-    .sidebar-toggle {
-        padding: 6px 12px;
-        font-size: 14px;
-        top: 12px;
-        right: 8px;
-        border-radius: 20px;
-    }
-
-        .sidebar-toggle .arrow {
-            font-size: 14px;
-        }
-    .top-bar {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 0;
-        position: fixed;
-    }
     .contact-strip {
         background-color: red;
         position: relative;
-        right: 50px;
-        padding: 10px 20px;
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 4px;
         pointer-events: auto;
         cursor: pointer;
         text-decoration: none;
         color: inherit;
-    }
-    .contact-strip {
-        position: relative;
-        right: 50px;
-    }
-    .sidebar-toggle {
         position: fixed;
-        top: 0;
-        right: 0px;
-        height: 60px;
-        padding: 0 20px;
-        background: radial-gradient(circle, #e50914, #a10b0b);
-        border: none;
-        border-radius: 30px;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        cursor: pointer;
+        top: 95px;
+        right: 45px;
+        padding: 5px;
+        z-index: 9999;
+    }
+
+  
+
+    .top-bar {
+        padding-top: 60px; /* to avoid overlap with fixed contact-strip */
+    }
+
+        .contact-strip .phone,
+        .contact-strip .email {
+            font-size: 14px;
+        }
+
+        .contact-strip a {
+            font-size: 14px;
+        }
+
+    #sidebar-toggle {
+        position: fixed;
+        top: 150px;
+        right: 45px;
         z-index: 2101;
-        font-size: 16px;
-        font-weight: bold;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-        transition: transform 0.3s ease, background 0.3s ease;
-    }
-    .hero-content h2 {
-        font-size: 28px;
-        line-height: 1.3;
-        padding: 0 15px;
-    }
-
-
-
-    .contact-strip .phone,
-    .contact-strip .email {
-        font-size: 14px;
     }
 }
 
@@ -2093,7 +2064,23 @@ html, body {
         margin: 20px 0;
     }
 
+@media (max-width: 768px) {
+    #map-container {
+        padding: 20px;
+    }
 
+    .world-map {
+        width: 150%;
+        max-width: none;
+        transform: translateX(-25%);
+    }
+
+    .route-overlay {
+        width: 150%;
+        transform: translateX(-25%);
+    }
+
+}
 .site-footer {
     background: #1b1b1b; /* Dark background */
     color: #ffffff; /* White text */

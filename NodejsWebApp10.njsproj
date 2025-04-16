@@ -40,6 +40,7 @@
     <Content Include="all-files.txt" />
     <Content Include="app.js" />
     <Content Include="bin\Microsoft.NodejsTools.WebRole.dll" />
+    <Content Include="images\IMG_9713.MP4" />
     <Content Include="NodejsWebApp8.njsproj" />
     <Content Include="NodejsWebApp8.njsproj.user" />
     <Content Include="node_modules\%40emailjs\browser\cjs\api\sendPost.js" />
@@ -1881,6 +1882,7 @@
     <Folder Include=".vs\NodejsWebApp8\FileContentIndex\" />
     <Folder Include=".vs\NodejsWebApp8\v17\" />
     <Folder Include="bin\" />
+    <Folder Include="images\" />
     <Folder Include="node_modules\" />
     <Folder Include="node_modules\%40emailjs\" />
     <Folder Include="node_modules\%40emailjs\browser\" />
