@@ -1,0 +1,3 @@
+C:\Users\ERAZER\source\repos\NodejsWebApp10\NodejsWebApp10\obj\Debug\NodejsWebApp10.njsproj.AssemblyReference.cache
+C:\Users\ERAZER\source\repos\NodejsWebApp10\NodejsWebApp10\obj\Debug\NodejsWebApp10.njsproj.CoreCompileInputs.cache
+C:\Users\ERAZER\source\repos\NodejsWebApp10\NodejsWebApp10\bin\Microsoft.NodejsTools.WebRole.dll

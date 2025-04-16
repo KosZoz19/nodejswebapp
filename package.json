@@ -14,19 +14,8 @@
   },
   "eslintConfig": {},
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     "@emailjs/browser": "^4.4.1",
     "express": "^5.1.0"
   }
 }
-=======
-    "express": "^5.1.0"
-  }
-}
->>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
-=======
-    "express": "^5.1.0"
-  }
-}
->>>>>>> 8de599f934f560beeae41632e96cce99e38b198a
