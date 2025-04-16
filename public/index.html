@@ -36,10 +36,10 @@
             <span class="phone">
                 <i class="fa-solid fa-phone" onclick="showCallingOptions()"></i>
 
-                <a href="tel:+48663833774">663 833 774</a>
+                <a href="tel:+48663833774">+48663833774</a>
             </span>
             <span class="email">
-                <i class="fa-solid fa-envelope" onclick="openEmailModal()"></i>
+                <i class="fa-solid fa-envelope" ></i>
                 <a href="mailto:autkozestanow@gmail.com">autkozestanow@gmail.com</a>
 
             </span>
@@ -146,7 +146,7 @@
                     <span style="color: #e50914;">Doświadczenie</span>
                 </div>
                 <p>
-                    <strong style="color: #e50914;">13 lat praktyki</strong><br>
+                    <strong style="color: #e50914;">6 lat praktyki</strong><br>
                     w sprowadzaniu aut ze Stanów
                 </p>
             </div>
@@ -328,6 +328,94 @@
                 </div>
             </li>
         </ol>
+    </section>
+    <section id="map-section">
+        <div id="map-container" style="position: relative;">
+            <img src="/images/BlankMap-World_gray.svg.png" alt="Mapa świata" class="world-map" style="width: 100%; height: auto;" />
+
+            <svg class="route-overlay" width="100%" height="100%" viewBox="0 0 1200 514" xmlns="http://www.w3.org/2000/svg">
+                <!-- Route: New York to Rotterdam -->
+                <path id="route-path-ny" d="M288,150 Q550,100 560,100" stroke="#e50914" stroke-width="3" fill="none" />
+                <circle id="start-dot-ny" cx="288" cy="150" r="6" fill="#e50914" />
+                <text x="288" y="138" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7">New York</text>
+                <text x="288" y="138" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold">New York</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-laplace" d="M230,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-laplace" cx="230" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">LaPlace</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">LaPlace</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-la" d="M280,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-la" cx="280" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Los Angeles</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Los Angeles</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-texas" d="M250,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-texas" cx="250" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Texas</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Texas</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-georgia" d="M270,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-georgia" cx="270" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Georgia</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Georgia</text>
+
+                <!-- Common end: Rotterdam -->
+                <circle id="end-dot-rotterdam" cx="560" cy="100" r="6" fill="#e50914" />
+                <text x="560" y="88" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7">Rotterdam</text>
+                <text id="rotterdam-red" x="560" y="88" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold">Rotterdam</text>
+
+                <!-- Ship for New York -->
+                <g id="ship-ny" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-ny" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-la" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-laplace" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-la1" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-la" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-texas" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-texas" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-georgia" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-georgia" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+            </svg>
+        </div>
     </section>
     <section class="importer-text">
         <div class="importer-text-content">
@@ -849,94 +937,7 @@
             <button id="sendEmailBtn" type="button" class="btn">Wyślij email</button>
         </div>
     </div>
-    <section id="map-section">
-        <div id="map-container" style="position: relative;">
-            <img src="/images/BlankMap-World_gray.svg.png" alt="Mapa świata" class="world-map" style="width: 100%; height: auto;" />
 
-            <svg class="route-overlay" width="100%" height="100%" viewBox="0 0 1200 514" xmlns="http://www.w3.org/2000/svg">
-                <!-- Route: New York to Rotterdam -->
-                <path id="route-path-ny" d="M288,150 Q550,100 560,100" stroke="#e50914" stroke-width="3" fill="none" />
-                <circle id="start-dot-ny" cx="288" cy="150" r="6" fill="#e50914" />
-                <text x="288" y="138" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7">New York</text>
-                <text x="288" y="138" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold">New York</text>
-
-                <!-- Route: LaPlace to Rotterdam -->
-                <path id="route-path-laplace" d="M230,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
-                <circle id="start-dot-laplace" cx="230" cy="185" r="6" fill="#e50914" style="display: none;" />
-                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">LaPlace</text>
-                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">LaPlace</text>
-
-                <!-- Route: LaPlace to Rotterdam -->
-                <path id="route-path-la" d="M280,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
-                <circle id="start-dot-la" cx="280" cy="185" r="6" fill="#e50914" style="display: none;" />
-                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Los Angeles</text>
-                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Los Angeles</text>
-
-                <!-- Route: LaPlace to Rotterdam -->
-                <path id="route-path-texas" d="M250,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
-                <circle id="start-dot-texas" cx="250" cy="185" r="6" fill="#e50914" style="display: none;" />
-                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Texas</text>
-                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Texas</text>
-
-                <!-- Route: LaPlace to Rotterdam -->
-                <path id="route-path-georgia" d="M270,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
-                <circle id="start-dot-georgia" cx="270" cy="185" r="6" fill="#e50914" style="display: none;" />
-                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Georgia</text>
-                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Georgia</text>
-
-                <!-- Common end: Rotterdam -->
-                <circle id="end-dot-rotterdam" cx="560" cy="100" r="6" fill="#e50914" />
-                <text x="560" y="88" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7">Rotterdam</text>
-                <text id="rotterdam-red" x="560" y="88" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold">Rotterdam</text>
-
-                <!-- Ship for New York -->
-                <g id="ship-ny" style="display: none;">
-                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
-                            <mpath xlink:href="#route-path-ny" />
-                        </animateMotion>
-                    </image>
-                </g>
-
-                <!-- Ship for LaPlace -->
-                <g id="ship-la" style="display: none;">
-                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
-                            <mpath xlink:href="#route-path-laplace" />
-                        </animateMotion>
-                    </image>
-                </g>
-
-                <!-- Ship for LaPlace -->
-                <g id="ship-la1" style="display: none;">
-                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
-                            <mpath xlink:href="#route-path-la" />
-                        </animateMotion>
-                    </image>
-                </g>
-
-                <!-- Ship for LaPlace -->
-                <g id="ship-texas" style="display: none;">
-                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
-                            <mpath xlink:href="#route-path-texas" />
-                        </animateMotion>
-                    </image>
-                </g>
-
-                <!-- Ship for LaPlace -->
-                <g id="ship-georgia" style="display: none;">
-                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
-                            <mpath xlink:href="#route-path-georgia" />
-                        </animateMotion>
-                    </image>
-                </g>
-
-            </svg>
-        </div>
-    </section>
 
     <footer class="site-footer">
         <div class="footer-content">
@@ -953,10 +954,12 @@
             <div class="footer-column">
                 <h3>Nawigacja</h3>
                 <ul class="footer-links">
-                    <li><a href="#hero">Strona Główna</a></li>
-                    <li><a href="#about">O nas</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#hero">Strona Główna</a></li>
+                        <li><a href="#about">O nas</a></li>
+                        <li><a href="#importer-intro">Importer</a></li>
+                        <li><a href="#import-process">Proces Importu</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#opinie">Opinie</a></li>
                 </ul>
             </div>
 
@@ -964,7 +967,7 @@
             <div class="footer-column">
                 <h3>Kontakt</h3>
                 <p>Tel: <a href="tel:+48663833774">+48 663 833 774</a></p>
-                <p>Email: <a href="mailto:kontakt@autazameryki.pl">kontakt@autazameryki.pl</a></p>
+                <p>Email: <a href="mailto:autkozestanow@gmail.com">autkozestanow@gmail.com</a></p>
 
                 <div class="footer-social-icons">
                     <a href="https://www.facebook.com/YourPage" target="_blank">

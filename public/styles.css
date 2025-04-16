@@ -555,9 +555,8 @@ text[text-anchor="middle"]:nth-of-type(5) {
         .contact-strip a {
             font-size: 14px;
         }
-       
-  
 
+   
     
 }
 @media (max-width: 768px) {
@@ -2120,14 +2119,14 @@ html, body {
 .footer-content {
     display: flex;
     flex-wrap: wrap; /* Wrap columns on small screens */
-    gap: 30px;
+    gap: 10px;
     max-width: 1200px; /* Center content */
     margin: 0 auto;
     justify-content: space-between;
 }
 
 .footer-column {
-    flex: 1 1 300px; /* Minimum width ~300px, adjust as needed */
+    flex: 1 1 100px; /* Minimum width ~300px, adjust as needed */
     min-width: 200px;
 }
 
