@@ -533,7 +533,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     }
     .top-bar {
         position: fixed;
-        top: 40px;
+        top: 0px;
         left: 0;
         width: 100%;
         z-index: 9998;
@@ -573,7 +573,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
 
     .route-overlay {
         width: 90%;
-        transform: translateX(-7%);
+        transform: translateX(-15%);
     }
 
     #map-section {
