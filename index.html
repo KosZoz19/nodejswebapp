@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EmailJS SDK loaded FIRST -->
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "TzVjmgBT4lCRkRnVt",
+            });
+        })();
+    </script>
+    <title>Autko ze Stanów - Nowoczesne Samochody</title>
+
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--<div id="intro-video-modal" class="video-modal">
+        <video id="intro-video" autoplay muted controls>
+            <source src="images/IMG_9713.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>-->
+    <div class="fixed-header-bg"></div>
+    <header class="top-bar">
+        <div class="contact-strip">
+            <span class="phone">
+                <i class="fa-solid fa-phone" onclick="showCallingOptions()"></i>
+
+                <a href="tel:+48663833774">+48663833774</a>
+            </span>
+            <span class="email">
+                <i class="fa-solid fa-envelope" ></i>
+                <a href="mailto:autkozestanow@gmail.com">autkozestanow@gmail.com</a>
+
+            </span>
+        </div>
+
+
+    </header>
+    <div class="social-pillar">
+        <span class="social-pillar-label">ODWIEDŹ NAS NA</span>
+        <a href="https://www.facebook.com/profile.php?id=61574995092512"target="_blank">
+
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/autkozestanow?igsh=MTQ3bWxmYjNncGN3dw%3D%3D&utm_source=qr" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@autkozestanow?_t=ZN-8vT54WZg2NS&_r=1" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://t.me/AutkozeStanow" target="_blank">
+            <i class="fab fa-telegram"></i>
+
+        </a>
+
+    </div>
+    <!-- <div id="calling-modal" class="calling-modal" style="display: none;">
+         <div class="modal-content">
+             <span class="close-calling-modal" onclick="closeCallingOptions()">&times;</span>
+             <h2>Zadzwoń do nas</h2>
+             <p>Wybierz opcję kontaktu:</p>
+             <div class="calling-options">
+                 <a href="tel:+48663833774" class="btn">Zadzwoń teraz</a>
+                 <a href="sms:+48663833774" class="btn">Wyślij SMS</a>
+                 <a href="mailto:autkozestanow@gmail.com" class="btn">Wyślij e-mail</a>
+
+             </div>
+         </div>
+     </div>
+     <!-- Sidebar Navigation (fixed on the right, hidden by default) -->
+    <button id="sidebar-toggle" class="sidebar-toggle">
+        <span class="vertical-text">MENU</span>
+        <span class="arrow">»</span>
+    </button>
+    <nav id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="#hero">Strona Główna</a></li>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#importer-intro">Importer</a></li>
+            <li><a href="#import-process">Proces Importu</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#opinie">Opinie</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section (Responsive Header Image) -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Odkryj najnowsze modele aut prosto z USA – gdzie jakość, innowacje i styl idą w parze.</h2>
+            <p>Zapoznaj się z naszym krótkim przewodnikiem na temat procesu importu.</p>
+            <!-- Button that opens the modal -->
+            <button class="btn" id="importMoreBtn">Dowiedz się więcej</button>
+        </div>
+    </section>
+    <!-- Modal Markup -->
+    <div id="importModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Proces Importu i Nasz Importer</h2>
+            <div class="modal-body">
+                <p>
+                    W kilku krokach: pomóż nam wybrać auto z USA, a my zajmiemy się całą logistyką –
+                    od weryfikacji historii pojazdu, poprzez licytację i transport, aż po odprawę celną
+                    i dostarczenie go do Twoich rąk.
+                </p>
+                <p>
+                    Nasz zespół to doświadczeni specjaliści, którzy od lat sprowadzają samochody z USA
+                    i Kanady. Dbamy o każdy detal, abyś mógł cieszyć się wyjątkowym autem z Ameryki bez stresu.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- "O nas" Modal -->
+    <div id="about-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-about-modal">&times;</span>
+            <h2>O nas</h2>
+            <p>
+                Witamy w Auta z Ameryki! Jesteśmy liderem w imporcie nowoczesnych samochodów z USA. Nasza pasja do motoryzacji, innowacyjne podejście oraz doświadczenie gwarantują naszym klientom najwyższą jakość usług. Poznaj naszą historię i dołącz do grona zadowolonych klientów!
+            </p>
+        </div>
+    </div>
+    <section id="importer-intro" class="importer-intro">
+        <div class="importer-intro-content">
+            <h2>Doświadczony importer samochodów z USA – Auta z Ameryki</h2>
+            <p>Kupimy i przetransportujemy Twoje auto z USA.</p>
+        </div>
+
+        <div class="importer-features">
+            <!-- Card 1: Experience -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-briefcase feature-icon"></i>
+                    <span style="color: #e50914;">Doświadczenie</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">6 lat praktyki</strong><br>
+                    w sprowadzaniu aut ze Stanów
+                </p>
+            </div>
+
+            <!-- Card 2: Discounts -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-tag feature-icon"></i>
+                    <span style="color: #e50914;">Rabat</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">Zniżki</strong><br>
+                    dla stałych klientów
+                </p>
+            </div>
+
+            <!-- Card 3: History -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-history feature-icon"></i>
+                    <span style="color: #e50914;">Historia</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">Zweryfikowana przeszłość</strong><br>
+                    i stan pojazdu z USA
+                </p>
+            </div>
+
+            <!-- Card 4: Satisfied Clients -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-thumbs-up feature-icon"></i>
+                    <span style="color: #e50914;">Zadowoleni klienci</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">99,9% usatysfakcjonowanych</strong><br>
+                    klientów
+                </p>
+            </div>
+
+            <!-- Card 5: Costs -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-dollar-sign feature-icon"></i>
+                    <span style="color: #e50914;">Koszt</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">Przejrzyste wydatki</strong><br>
+                    przy imporcie pojazdu
+                </p>
+            </div>
+
+            <!-- Card 6: Rules -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-gavel feature-icon"></i>
+                    <span style="color: #e50914;">Zasady</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">Klarowne reguły</strong><br>
+                    sprowadzania aut
+                </p>
+            </div>
+
+            <!-- Card 7: Contact -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-phone feature-icon"></i>
+                    <span style="color: #e50914;">Kontakt</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">Skontaktuj się</strong><br>
+                    – wspieramy na każdym etapie sprowadzania
+                </p>
+            </div>
+
+            <!-- Card 8: Imported Vehicles -->
+            <div class="feature-item">
+                <div class="icon-line">
+                    <i class="fa-solid fa-car feature-icon"></i>
+                    <span style="color: #e50914;">Import</span>
+                </div>
+                <p>
+                    <strong style="color: #e50914;">Więcej niż 2500</strong><br>
+                    pojazdów przywiezionych z USA i Kanady
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="auctions">
+        <h2>Możemy również zamówić samochody z poniższych aukcji</h2>
+        <div class="auction-grid">
+            <!-- IAAI Auction -->
+            <div class="auction-item">
+                <img src="https://logo.clearbit.com/iaai.com" alt="IAAI Auction">
+                <p>IAAI</p>
+            </div>
+            <!-- Copart Auction -->
+            <div class="auction-item">
+                <img src="https://logo.clearbit.com/copart.com" alt="Copart Auction">
+                <p>Copart</p>
+            </div>
+            <!-- Manheim Auction -->
+            <div class="auction-item">
+                <img src="https://logo.clearbit.com/manheim.com" alt="Manheim Auction">
+                <p>Manheim</p>
+            </div>
+            <!-- Adesa Auction -->
+            <div class="auction-item">
+                <img src="https://logo.clearbit.com/adesa.com" alt="Adesa Auction">
+                <p>Adesa</p>
+            </div>
+        </div>
+    </section>
+    <section id="import-process" class="import-process">
+        <h2>Proces Importu Samochodu</h2>
+        <ol>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-car-side"></i></div>
+                <div class="step-content">
+                    <h3>WYBÓR POJAZDU</h3>
+                    <p>Klient określa kryteria (wyposażenie, silnik, przebieg, stan), a pośrednik przeszukuje oferty, weryfikuje historię i szacuje koszty.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-file-signature"></i></div>
+                <div class="step-content">
+                    <h3>OŚWIADCZENIE I DEPOZYT</h3>
+                    <p>Klient składa oświadczenie i wpłaca depozyt, który zostanie zwrócony przy spełnieniu warunków.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-gavel"></i></div>
+                <div class="step-content">
+                    <h3>LICYTACJA POJAZDU</h3>
+                    <p>Pośrednik licytuje pojazd w ramach limitu ustalonego przez klienta, który może go aktualizować poprzez nowe oświadczenia.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-credit-card"></i></div>
+                <div class="step-content">
+                    <h3>PŁATNOŚĆ</h3>
+                    <p>Klient uiszcza pełną opłatę, pokrywając wszystkie koszty usługi.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-truck"></i></div>
+                <div class="step-content">
+                    <h3>IMPORT POJAZDU</h3>
+                    <p>Po potwierdzeniu płatności, pośrednik odbiera pojazd z aukcji, transportuje go do portu, fotografuje, ładuje do kontenera i wysyła do UE, przekazując aktualne informacje.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div class="step-content">
+                    <h3>ODPRAWA CELNA</h3>
+                    <p>Po rozładunku wykonywane są zdjęcia, pojazd przechodzi odprawę celną, a agencja wystawia fakturę VAT – klient reguluje należności celne.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+                <div class="step-content">
+                    <h3>ODBIÓR I DOKUMENTY</h3>
+                    <p>Pojazd dostarczany jest pod wskazany adres, a dokumenty przesyłane są kurierem po rozliczeniu prowizji (rozładunek po stronie klienta).</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                <div class="step-content">
+                    <h3>REJESTRACJA</h3>
+                    <p>Pośrednik przekazuje niezbędne dokumenty (TITLE, faktura, dokumenty celne), a klient dołącza tłumaczenia oraz potwierdzenie opłaty akcyzy.</p>
+                </div>
+            </li>
+            <li>
+                <div class="step-icon"><i class="fa-solid fa-shield"></i></div>
+                <div class="step-content">
+                    <h3>UBEZPIECZENIE</h3>
+                    <p>Klient akceptuje brak ubezpieczenia podczas transportu. Na wniosek, pośrednik może zorganizować opcjonalne ubezpieczenie, z wyłączeniem uszkodzeń przy załadunku/rozładunku.</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section id="map-section">
+        <div id="map-container" style="position: relative;">
+            <img src="/images/BlankMap-World_gray.svg.png" alt="Mapa świata" class="world-map" style="width: 100%; height: auto;" />
+
+            <svg class="route-overlay" width="100%" height="100%" viewBox="0 0 1200 514" xmlns="http://www.w3.org/2000/svg">
+                <!-- Route: New York to Rotterdam -->
+                <path id="route-path-ny" d="M288,150 Q550,100 560,100" stroke="#e50914" stroke-width="3" fill="none" />
+                <circle id="start-dot-ny" cx="288" cy="150" r="6" fill="#e50914" />
+                <text x="288" y="138" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7">New York</text>
+                <text x="288" y="138" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold">New York</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-laplace" d="M230,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-laplace" cx="230" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">LaPlace</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">LaPlace</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-la" d="M280,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-la" cx="280" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Los Angeles</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Los Angeles</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-texas" d="M250,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-texas" cx="250" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Texas</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Texas</text>
+
+                <!-- Route: LaPlace to Rotterdam -->
+                <path id="route-path-georgia" d="M270,185 Q510,120 560,100" stroke="#e50914" stroke-width="3" fill="none" style="display: none;" />
+                <circle id="start-dot-georgia" cx="270" cy="185" r="6" fill="#e50914" style="display: none;" />
+                <text x="230" y="170" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7" style="display: none;">Georgia</text>
+                <text x="230" y="170" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold" style="display: none;">Georgia</text>
+
+                <!-- Common end: Rotterdam -->
+                <circle id="end-dot-rotterdam" cx="560" cy="100" r="6" fill="#e50914" />
+                <text x="560" y="88" fill="black" font-size="14" text-anchor="middle" font-weight="bold" opacity="0.7">Rotterdam</text>
+                <text id="rotterdam-red" x="560" y="88" fill="#e50914" font-size="14" text-anchor="middle" font-weight="bold">Rotterdam</text>
+
+                <!-- Ship for New York -->
+                <g id="ship-ny" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-ny" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-la" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-laplace" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-la1" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-la" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-texas" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-texas" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+                <!-- Ship for LaPlace -->
+                <g id="ship-georgia" style="display: none;">
+                    <image xlink:href="/images/ship-icon.svg" width="24" height="24">
+                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                            <mpath xlink:href="#route-path-georgia" />
+                        </animateMotion>
+                    </image>
+                </g>
+
+            </svg>
+        </div>
+    </section>
+    <section class="importer-text">
+        <div class="importer-text-content">
+            <h2>Jakie samochody z USA najbardziej opłaca się sprowadzać?</h2>
+            <p>
+                Pojazdy eksploatowane na amerykańskich drogach zazwyczaj dysponują wyjątkowo
+                obszerną dokumentacją – obejmującą rejestracje, serwisy oraz ewentualne naprawy.
+                To duży atut w porównaniu z autami sprowadzanymi z Europy Zachodniej, gdzie tak
+                szczegółowa historia pojazdu często nie jest dostępna. Ponadto, rynek USA i Kanady
+                oferuje wiele unikatowych modeli (np. muscle cary, pick-upy) oraz konfiguracji,
+                które w europejskiej ofercie producentów bywają nieobecne.
+            </p>
+            <p>
+                Dodatkowo, w Stanach Zjednoczonych i Kanadzie można znaleźć atrakcyjne egzemplarze
+                w korzystnej cenie – zwłaszcza jeśli chodzi o pojazdy uszkodzone (tzw. salvage)
+                czy samochody kolekcjonerskie. Dzięki temu import z USA daje szansę na sprowadzenie
+                nietypowych lub rzadkich aut, często z lepszym wyposażeniem niż ich odpowiedniki
+                na rynku europejskim.
+            </p>
+            <h3>Jakie rodzaje aut z USA warto sprowadzać?</h3>
+            <ul>
+                <li><strong>Samochody uszkodzone z USA</strong> – często tańsze, choć wymagają napraw;</li>
+                <li><strong>Samochody luksusowe z USA</strong> – bogato wyposażone i nieraz niedostępne w Europie;</li>
+                <li><strong>Samochody zabytkowe z USA</strong> – cenione klasyki o dużej wartości kolekcjonerskiej.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="blog" class="blog">
+        <h2>Import aut z USA</h2>
+        <div class="blog-posts">
+            <!-- Article 1 -->
+            <article class="post">
+                <i class="fa-solid fa-globe post-icon"></i>
+                <h3>Dlaczego warto importować samochody z USA?</h3>
+                <p>Poznaj zalety importu aut z USA – szeroki wybór modeli, atrakcyjne ceny i unikalne rozwiązania technologiczne.</p>
+                <a href="#post1" class="btn post-link">Czytaj więcej</a>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="post">
+                <i class="fa-solid fa-list-check post-icon"></i>
+                <h3>Jak przeprowadzić import samochodu krok po kroku?</h3>
+                <p>Kompleksowy poradnik, który przeprowadzi Cię przez wszystkie etapy importu – od wyboru auta po odbiór w Polsce.</p>
+                <a href="#post2" class="btn post-link">Czytaj więcej</a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="post">
+                <i class="fa-solid fa-star post-icon"></i>
+                <h3>Najlepsze modele do importu z USA</h3>
+                <p>Sprawdź, które modele samochodów z USA cieszą się największym uznaniem wśród polskich klientów i dlaczego warto postawić właśnie na nie.</p>
+                <a href="#post3" class="btn post-link">Czytaj więcej</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modals (hidden by default) -->
+    <!-- Modal for Article 1 -->
+    <div id="post1-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" data-modal="post1-modal">&times;</span>
+            <h2>Dlaczego warto importować samochody z USA?</h2>
+            <div class="modal-body">
+                <p>
+                    Import aut z USA oferuje szeroki wybór modeli, atrakcyjne ceny i innowacyjne technologie, często niedostępne w Europie. Wiele pojazdów ma bogate wyposażenie, a dzięki aukcjom można znaleźć unikalne egzemplarze w dobrym stanie.
+                </p>
+                <p>
+                    Rynek amerykański cechuje się także przejrzystą historią serwisową. Często można zweryfikować przebieg i naprawy, co zwiększa bezpieczeństwo transakcji.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Article 2 -->
+    <div id="post2-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" data-modal="post2-modal">&times;</span>
+            <h2>Jak przeprowadzić import samochodu krok po kroku?</h2>
+            <div class="modal-body">
+                <p>
+                    1. Wybór auta: Określ budżet i preferencje, a następnie wyszukaj egzemplarze na aukcjach (Copart, IAAI, Manheim, itp.).<br>
+                    2. Weryfikacja historii: Sprawdź VIN, stan techniczny i dokumenty pojazdu.<br>
+                    3. Licytacja i zakup: Złóż ofertę w ramach określonego limitu cenowego.<br>
+                    4. Transport i odprawa celna: Auto trafia do portu, przechodzi odprawę celną i zostaje przetransportowane do Polski.<br>
+                    5. Rejestracja w kraju: Po otrzymaniu dokumentów i opłaceniu akcyzy zarejestruj pojazd w odpowiednim urzędzie.
+                </p>
+                <p>
+                    Cały proces może zająć od kilku tygodni do kilku miesięcy, ale pozwala zaoszczędzić i zdobyć wyjątkowy pojazd.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Article 3 -->
+    <div id="post3-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" data-modal="post3-modal">&times;</span>
+            <h2>Najlepsze modele do importu z USA</h2>
+            <div class="modal-body">
+                <p>
+                    Na rynku amerykańskim znajdziemy wiele interesujących modeli, m.in. muscle cary (Ford Mustang, Chevrolet Camaro), luksusowe SUV-y (Cadillac Escalade, Lincoln Navigator) czy ekonomiczne sedany (Toyota Camry, Honda Accord) w bogatych wersjach wyposażenia.
+                </p>
+                <p>
+                    Warto także zwrócić uwagę na auta hybrydowe i elektryczne (Tesla Model 3, Model Y), które często oferują świetne osiągi w konkurencyjnej cenie w porównaniu do europejskich odpowiedników.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section id="opinie" class="opinie">
+        <h2>Poznaj opinie o nas</h2>
+        <div class="opinie-container">
+            <div class="opinie-track" id="opinie-track">
+                <!-- Opinion Card 1 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Alicja Nowacka" class="opinia-avatar">
+                        <div>
+                            <h3>Alicja Nowacka</h3>
+                            <p class="opinia-date">1 miesiąc temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Bardzo polecam. Wszystko przebiegło szybko i bezstresowo. Firma pomaga przy całym procesie importu.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 2 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Magdalena Sadowska" class="opinia-avatar">
+                        <div>
+                            <h3>Magdalena Sadowska</h3>
+                            <p class="opinia-date">3 miesiące temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Usługa na najwyższym poziomie! Bardzo szybka pomoc przy doborze auta. Zdecydowanie polecam!
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 3 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Julia Zawadzka" class="opinia-avatar">
+                        <div>
+                            <h3>Julia Zawadzka</h3>
+                            <p class="opinia-date">1 tydzień temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Bardzo dobra obsługa. Auto przyszło zgodnie z opisem, jednak czas oczekiwania na dokumenty był długi.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 4 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Łukasz Czerwiński" class="opinia-avatar">
+                        <div>
+                            <h3>Łukasz Czerwiński</h3>
+                            <p class="opinia-date">2 miesiące temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Bardzo pomocni doradcy i świetna obsługa. Jestem zachwycony zakupionym samochodem! Polecam serdecznie.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+
+                </div>
+
+                <!-- Opinion Card 5 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Krzysztof Baranowski" class="opinia-avatar">
+                        <div>
+                            <h3>Krzysztof Baranowski</h3>
+                            <p class="opinia-date">3 tygodnie temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Profesjonalna obsługa i szybka realizacja. Samochód w pełni spełnia moje oczekiwania, dziękuję!
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+
+                </div>
+
+                <!-- Opinion Card 6 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Emilia Jankowska" class="opinia-avatar">
+                        <div>
+                            <h3>Emilia Jankowska</h3>
+                            <p class="opinia-date">1 miesiąć temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Jestem bardzo zadowolona. Dobrze zaprezentowane zdjęcia, auto bez niespodzianek.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+
+                </div>
+
+                <!-- Opinion Card 7 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Sebastian Jaworski" class="opinia-avatar">
+                        <div>
+                            <h3>Sebastian Jaworski</h3>
+                            <p class="opinia-date">7 miesięcy temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Jestem pod ogromnym wrażeniem profesjonalizmu tej firmy. Wszystko – od pierwszego kontaktu po finalizację zamówienia – zostało wykonane perfekcyjnie.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 8 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Bartosz Wróblewski" class="opinia-avatar">
+                        <div>
+                            <h3>Bartosz Wróblewski</h3>
+                            <p class="opinia-date">3 miesięcy temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Obsługa była bardzo profesjonalna, szybka i rzetelna. Polecam każdemu, kto szuka auta z USA.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 9 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Weronika Kopacka" class="opinia-avatar">
+                        <div>
+                            <h3>Weronika Kopacka</h3>
+                            <p class="opinia-date">2 tygodnie temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Rewelacyjna obsługa i auto, które spełniło wszystkie moje oczekiwania. Nie miałam żadnych problemów z firmą.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 10 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Jakub Nowicki" class="opinia-avatar">
+                        <div>
+                            <h3>Jakub Nowicki</h3>
+                            <p class="opinia-date">1 miesiąc temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Super auto, które dotarło w idealnym stanie.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 11 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Kamil Kwiatkowski" class="opinia-avatar">
+                        <div>
+                            <h3>Kamil Kwiatkowski</h3>
+                            <p class="opinia-date">2 tygodnie temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Jestem bardzo zadowolony z zakupu! Pomocne doradztwo i dobra cena. Polecam tą firmę z całego serca.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+
+                </div>
+
+                <!-- Opinion Card 12 -->
+                <div class="opinia-card">
+                    <div class="opinia-header">
+                        <img src="/images/default.jpg" alt="Natalia Górska" class="opinia-avatar">
+                        <div>
+                            <h3>Natalia Górska</h3>
+                            <p class="opinia-date">10 miesięcy temu</p>
+                        </div>
+                    </div>
+                    <div class="opinia-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <p class="opinia-text">
+                        Firma świadczy usługi na najwyższym poziomie. Proces zamówienia był łatwy, a produkt spełnił wszystkie moje oczekiwania.
+                    </p>
+                    <div class="opinia-logo">
+                        <img src="/images/google.png" alt="Google Logo">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Modals (hidden by default) -->
+    <!-- Modal for Article 1 -->
+    <div id="post1-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" data-modal="post1-modal">&times;</span>
+            <h2>Dlaczego warto importować samochody z USA?</h2>
+            <div class="modal-body">
+                <p>
+                    Import aut z USA oferuje szeroki wybór modeli, atrakcyjne ceny i innowacyjne technologie, często niedostępne w Europie. Wiele pojazdów ma bogate wyposażenie, a dzięki aukcjom można znaleźć unikalne egzemplarze w dobrym stanie.
+                </p>
+                <p>
+                    Rynek amerykański cechuje się także przejrzystą historią serwisową. Często można zweryfikować przebieg i naprawy, co zwiększa bezpieczeństwo transakcji.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Article 2 -->
+    <div id="post2-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" data-modal="post2-modal">&times;</span>
+            <h2>Jak przeprowadzić import samochodu krok po kroku?</h2>
+            <div class="modal-body">
+                <p>
+                    1. Wybór auta: Określ budżet i preferencje, a następnie wyszukaj egzemplarze na aukcjach (Copart, IAAI, Manheim, itp.).<br>
+                    2. Weryfikacja historii: Sprawdź VIN, stan techniczny i dokumenty pojazdu.<br>
+                    3. Licytacja i zakup: Złóż ofertę w ramach określonego limitu cenowego.<br>
+                    4. Transport i odprawa celna: Auto trafia do portu, przechodzi odprawę celną i zostaje przetransportowane do Polski.<br>
+                    5. Rejestracja w kraju: Po otrzymaniu dokumentów i opłaceniu akcyzy zarejestruj pojazd w odpowiednim urzędzie.
+                </p>
+                <p>
+                    Cały proces może zająć od kilku tygodni do kilku miesięcy, ale pozwala zaoszczędzić i zdobyć wyjątkowy pojazd.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Article 3 -->
+    <div id="post3-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" data-modal="post3-modal">&times;</span>
+            <h2>Najlepsze modele do importu z USA</h2>
+            <div class="modal-body">
+                <p>
+                    Na rynku amerykańskim znajdziemy wiele interesujących modeli, m.in. muscle cary (Ford Mustang, Chevrolet Camaro), luksusowe SUV-y (Cadillac Escalade, Lincoln Navigator) czy ekonomiczne sedany (Toyota Camry, Honda Accord) w bogatych wersjach wyposażenia.
+                </p>
+                <p>
+                    Warto także zwrócić uwagę na auta hybrydowe i elektryczne (Tesla Model 3, Model Y), które często oferują świetne osiągi w konkurencyjnej cenie w porównaniu do europejskich odpowiedników.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Blog Detailed Posts Sections remain unchanged (if needed) -->
+    <!-- Footer (Contact section removed) -->
+    <div class="help-widget">
+        <!-- The bubble that shows "Skontaktuj się z nami" -->
+        <div class="help-bubble" id="helpBubble" onclick="toggleHelpForm()">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Skontaktuj się z nami</span>
+        </div>
+
+        <!-- The expanded online help form with phone number field -->
+        <div class="help-form" id="helpForm">
+            <div class="help-form-header">
+                <h3>Formularz kontaktowy</h3>
+                <button class="close-btn" onclick="toggleHelpForm()">&times;</button>
+            </div>
+            <div class="help-form-body">
+                <p>Proszę zostawić wiadomość lub numer telefonu, a my się z Tobą skontaktujemy.</p>
+                <form id="contactForm">
+                    <label for="helpName">Imię</label>
+                    <input type="text" id="helpName" placeholder="Twoje imię" required>
+
+                    <label for="helpEmail">E-mail</label>
+                    <input type="email" id="helpEmail" placeholder="Twój email" required>
+
+                    <label for="helpPhone">Telefon</label>
+                    <input type="tel" id="helpPhone" placeholder="Twój numer telefonu" required>
+
+                    <label for="helpMessage">Wiadomość</label>
+                    <textarea id="helpMessage" rows="3" placeholder="Twoja wiadomość tutaj..." required></textarea>
+
+                    <button type="submit">Wyślij</button>
+                    <p class="form-disclaimer">
+                        *Wysyłając formularz wyrażasz zgodę na kontakt mailowy lub telefoniczny.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="emailModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-email-modal">&times;</span>
+            <h2>Kontakt emailowy</h2>
+            <p>Napisz do nas na adres: <strong>autkozestanow@gmail.com</strong></p>
+            <button id="sendEmailBtn" type="button" class="btn">Wyślij email</button>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Column 1: About / Brief Info -->
+            <div class="footer-column">
+                <h3>O nas</h3>
+                <p>
+                    Jesteśmy liderem w imporcie nowoczesnych samochodów z USA. Nasza pasja
+                    do motoryzacji i wieloletnie doświadczenie gwarantują najwyższą jakość usług.
+                </p>
+            </div>
+
+            <!-- Column 2: Navigation -->
+            <div class="footer-column">
+                <h3>Nawigacja</h3>
+                <ul class="footer-links">
+                        <li><a href="#hero">Strona Główna</a></li>
+                        <li><a href="#about">O nas</a></li>
+                        <li><a href="#importer-intro">Importer</a></li>
+                        <li><a href="#import-process">Proces Importu</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#opinie">Opinie</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact & Socials -->
+            <div class="footer-column">
+                <h3>Kontakt</h3>
+                <p>Tel: <a href="tel:+48663833774">+48 663 833 774</a></p>
+                <p>Email: <a href="mailto:autkozestanow@gmail.com">autkozestanow@gmail.com</a></p>
+
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com/share/1A2FusSqy9/?mibextid=wwXIfr" target="_blank">
+
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/autkozestanow?igsh=MTQ3bWxmYjNncGN3dw%3D%3D&utm_source=qr" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@autkozestanow?_t=ZN-8vT54WZg2NS&_r=1" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://t.me/AutkozeStanow" target="_blank">
+                        <i class="fab fa-telegram"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Autko ze Stanów. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling, Modals, and Sidebar Script -->
+
+    <script>
+        const nameToPhotoMapping = {
+            'Jakub Nowicki': 'https://randomuser.me/api/portraits/men/10.jpg',
+            'Kamil Kwiatkowski': 'https://randomuser.me/api/portraits/men/11.jpg',
+            'Bartosz Wróblewski': 'https://randomuser.me/api/portraits/men/12.jpg',
+            'Łukasz Czerwiński': 'https://randomuser.me/api/portraits/men/13.jpg',
+            'Krzysztof Baranowski': 'https://randomuser.me/api/portraits/men/14.jpg',
+            'Sebastian Jaworski': 'https://randomuser.me/api/portraits/men/15.jpg',
+            'Emilia Jankowska': 'https://randomuser.me/api/portraits/women/10.jpg',
+            'Julia Zawadzka': 'https://randomuser.me/api/portraits/women/11.jpg',
+            'Weronika Kopacka': 'https://randomuser.me/api/portraits/women/12.jpg',
+            'Alicja Nowacka': 'https://randomuser.me/api/portraits/women/13.jpg',
+            'Magdalena Sadowska': 'https://randomuser.me/api/portraits/women/14.jpg',
+            'Natalia Górska': 'https://randomuser.me/api/portraits/women/15.jpg'
+        };
+
+        // Example: Update an image element based on name
+        document.addEventListener('DOMContentLoaded', () => {
+            const opinionCards = document.querySelectorAll('.opinia-card');
+            opinionCards.forEach(card => {
+                const nameElement = card.querySelector('.opinia-header h3');
+                const avatarElement = card.querySelector('.opinia-avatar');
+                if (nameElement && avatarElement) {
+                    const name = nameElement.textContent.trim();
+                    if (nameToPhotoMapping[name]) {
+                        avatarElement.src = nameToPhotoMapping[name];
+                        avatarElement.alt = name;
+                    }
+                }
+            });
+        });
+
+        function showEmailModal() {
+            document.getElementById('emailModal').style.display = 'flex';
+        }
+
+        function closeEmailModal() {
+            document.getElementById('emailModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside content
+        window.onclick = function (event) {
+            const modal = document.getElementById('emailModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        function validatePhone() {
+            const phoneInput = document.getElementById('helpPhone').value;
+            // Accepts numbers with optional leading + and spaces/hyphens (adjust pattern as needed)
+            const phonePattern = /^\+?[\d\s-]{7,}$/;
+            if (!phonePattern.test(phoneInput)) {
+                alert("Proszę podać poprawny numer telefonu.");
+                return false;
+            }
+            return true;
+        }
+        function toggleHelpForm() {
+            const form = document.getElementById('helpForm');
+            const bubble = document.getElementById('helpBubble');
+            if (form.style.display === 'block') {
+                form.style.display = 'none';
+                bubble.style.display = 'flex';
+            } else {
+                form.style.display = 'block';
+                bubble.style.display = 'none';
+            }
+        }
+        // Attach the form submit handler
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Check phone number validity
+            if (validatePhone()) {
+                // If valid, you can process the form submission (AJAX, email, etc.)
+                alert("Formularz wysłany!");
+                // Optionally reset the form
+
+
+
+                toggleHelpForm(); // Close form after submission
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("intro-video-modal");
+            const video = document.getElementById("intro-video");
+
+            if (!localStorage.getItem("videoShown")) {
+                modal.style.display = "flex";
+                video.play();
+
+                // When video ends, hide the modal
+                video.onended = function () {
+                    modal.style.display = "none";
+                    localStorage.setItem("videoShown", "true");
+                };
+            } else {
+                modal.style.display = "none";
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            // For each "Czytaj więcej" link
+            document.querySelectorAll('.post-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    // e.g. href="#post1" => "post1-modal"
+                    const targetID = this.getAttribute('href').replace('#', '');
+                    const modalID = targetID + '-modal';
+                    const modal = document.getElementById(modalID);
+                    if (modal) {
+                        modal.style.display = 'flex';
+                    }
+                });
+            });
+
+            // For each close button
+            document.querySelectorAll('.close-modal').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const modalID = this.getAttribute('data-modal');
+                    document.getElementById(modalID).style.display = 'none';
+                });
+            });
+
+            // Close modal if user clicks outside the modal content
+            window.addEventListener('click', function (e) {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(m => {
+                    if (e.target === m) {
+                        m.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const closeEmailBtn = document.querySelector('.close-email-modal');
+            const emailModal = document.getElementById('emailModal');
+
+            // Close on X click
+            if (closeEmailBtn) {
+                closeEmailBtn.addEventListener('click', () => {
+                    emailModal.style.display = 'none';
+                });
+            }
+
+            // Close when clicking outside the modal content
+            window.addEventListener('click', (e) => {
+                if (e.target === emailModal) {
+                    emailModal.style.display = 'none';
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const importBtn = document.getElementById('importMoreBtn');
+            const importModal = document.getElementById('importModal');
+            const closeBtn = document.querySelector('.close-modal');
+
+            // Open modal when the button is clicked
+            importBtn.addEventListener('click', function () {
+                importModal.style.display = 'flex';
+            });
+
+            // Close modal when the close button is clicked
+            closeBtn.addEventListener('click', function () {
+                importModal.style.display = 'none';
+            });
+
+            // Close modal if user clicks outside the modal content
+            window.addEventListener('click', function (e) {
+                if (e.target === importModal) {
+                    importModal.style.display = 'none';
+                }
+            });
+        });
+        function showCallingOptions() {
+            document.getElementById('calling-modal').style.display = 'flex';
+        }
+
+        function closeCallingOptions() {
+            document.getElementById('calling-modal').style.display = 'none';
+        }
+
+        // Optional: close the modal if clicking outside of its content
+        window.addEventListener('click', function (e) {
+            const modal = document.getElementById('calling-modal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+
+        function showCallingOptions() {
+            document.getElementById('calling-modal').style.display = 'flex';
+        }
+
+        function closeCallingOptions() {
+            document.getElementById('calling-modal').style.display = 'none';
+        }
+
+        function openEmailModal() {
+            document.getElementById('emailModal').style.display = 'flex';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('opinie-track');
+            let scrollPosition = 0;
+            const speed = 0.2; // px per frame, slower speed
+            let requestId;
+
+            function scrollOpinions() {
+                scrollPosition += speed;
+                track.style.transform = `translateX(-${scrollPosition}px)`;
+
+                // The total width of the track
+                const trackWidth = track.scrollWidth;
+                // Half the width is the length of the first set (since we duplicated the cards)
+                const halfWidth = trackWidth / 2;
+
+                // If we've scrolled half the track, reset to 0
+                if (scrollPosition >= halfWidth) {
+                    scrollPosition = 0;
+                }
+
+                requestId = requestAnimationFrame(scrollOpinions);
+            }
+
+            // Start the animation
+            requestId = requestAnimationFrame(scrollOpinions);
+        });
+
+        emailjs.init("TzVjmgBT4lCRkRnVt"); // Your public key
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('helpName').value;
+            const email = document.getElementById('helpEmail').value;
+            const phone = document.getElementById('helpPhone').value;
+            const message = document.getElementById('helpMessage').value;
+
+            if (!name || !email || !phone || !message) {
+                alert("Wypełnij wszystkie pola.");
+                return;
+            }
+
+            const phonePattern = /^\+?[\d\s-]{7,}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Proszę podać poprawny numer telefonu.");
+                return;
+            }
+
+            emailjs.send("service_bnb08ij", "template_c6ciehw", {
+                helpName: name,
+                helpEmail: email,
+                helpPhone: phone,
+                helpMessage: message
+            }).then(() => {
+                alert('✅ Wiadomość została wysłana!');
+                document.getElementById('contactForm').reset();
+                toggleHelpForm(); // close the form
+            }, (error) => {
+                console.error('❌ Błąd:', error);
+                alert('❌ Wystąpił błąd podczas wysyłania wiadomości.');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the "Dowiedz się więcej" button in the hero section
+            const learnMoreBtn = document.querySelector('.hero .btn');
+            if (learnMoreBtn) {
+                learnMoreBtn.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default behavior (scrolling)
+
+                    // Fetch the summary data from your updated API endpoint
+                    fetch('/api/summary')
+                        .then(response => response.json())
+                        .then(summary => {
+
+
+                            // Show the summary modal
+                            document.getElementById('summary-modal').style.display = 'flex';
+                        })
+                        .catch(error => console.error('Error fetching summary:', error));
+                });
+            } else {
+                console.error('Dowiedz się więcej button not found');
+            }
+
+            // Close summary modal
+            const closeSummaryBtn = document.querySelector('.close-summary-modal');
+            if (closeSummaryBtn) {
+                closeSummaryBtn.addEventListener('click', closeSummaryModal);
+            }
+            function closeSummaryModal() {
+                const modal = document.getElementById('summary-modal');
+                const modalContent = modal.querySelector('.modal-content');
+                modal.style.animation = 'fadeOut 0.4s forwards';
+                modalContent.style.animation = 'scaleOut 0.4s forwards';
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    modal.style.animation = '';
+                    modalContent.style.animation = '';
+                }, 400);
+            }
+            window.addEventListener('click', (e) => {
+                const modal = document.getElementById('summary-modal');
+                if (modal && e.target === modal) {
+                    closeSummaryModal();
+                }
+            });
+
+            // Sidebar toggle logic
+            const sidebarToggle = document.getElementById('sidebar-toggle');
+            const sidebar = document.getElementById('sidebar');
+            const arrow = sidebarToggle.querySelector('.arrow');
+            sidebarToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('open');
+                arrow.textContent = sidebar.classList.contains('open') ? '«' : '»';
+            });
+
+            // "O nas" link in sidebar opens the "O nas" modal
+            const aboutLink = document.querySelector('a[href="#about"]');
+            if (aboutLink) {
+                aboutLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.getElementById('about-modal').style.display = 'flex';
+                });
+            } else {
+                console.error('Element with href="#about" not found.');
+            }
+            const closeAboutBtn = document.querySelector('.close-about-modal');
+            if (closeAboutBtn) {
+                closeAboutBtn.addEventListener('click', () => {
+                    document.getElementById('about-modal').style.display = 'none';
+                });
+            }
+            window.addEventListener('click', (e) => {
+                const modal = document.getElementById('about-modal');
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else {
+                    console.warn("No element found for", this.getAttribute('href'));
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const cookieConsent = document.getElementById('cookieConsent');
+            const cookieAccept = document.getElementById('cookieAccept');
+
+            // Check if consent has been stored
+            if (!localStorage.getItem('cookieConsent')) {
+                cookieConsent.style.display = 'flex';
+            } else {
+                cookieConsent.style.display = 'none';
+            }
+
+            cookieAccept.addEventListener('click', function () {
+                localStorage.setItem('cookieConsent', 'true');
+                cookieConsent.style.display = 'none';
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const routePath = document.getElementById('route-path');
+            const dots = document.querySelectorAll('#start-dot, #end-dot');
+            const ship = document.querySelector('image animateMotion');
+
+            let animationTriggered = false;
+
+            window.addEventListener('scroll', () => {
+                const section = document.getElementById('map-section');
+                const sectionPosition = section.getBoundingClientRect().top;
+                const triggerPoint = window.innerHeight / 1.3;
+
+                if (sectionPosition < triggerPoint && !animationTriggered) {
+                    animationTriggered = true;
+
+                    // Start path drawing
+                    routePath.style.animationPlayState = 'running';
+
+                    // Start dots fade in
+                    dots.forEach(dot => dot.style.animationPlayState = 'running');
+
+                    // Trigger ship animation (SVG animation tag)
+                    if (ship) {
+                        ship.beginElement?.(); // Starts <animateMotion>
+                    }
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const emailLink = document.getElementById('emailLink');
+            const emailModal = document.getElementById('emailModal');
+            const closeEmailBtn = document.querySelector('.close-email-modal');
+
+            emailLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                emailModal.style.display = 'flex';
+            });
+
+            closeEmailBtn.addEventListener('click', () => {
+                emailModal.style.display = 'none';
+            });
+
+            window.addEventListener('click', (e) => {
+                if (e.target === emailModal) {
+                    emailModal.style.display = 'none';
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            const routeNY = document.getElementById("route-path-ny");
+            const routeLa = document.getElementById("route-path-laplace");
+
+
+            const dotNY = document.getElementById("start-dot-ny");
+            const dotLa = document.getElementById("start-dot-laplace");
+
+            const nyLabels = Array.from(document.querySelectorAll("text")).filter(el => el.textContent.includes("New York"));
+            const laLabels = Array.from(document.querySelectorAll("text")).filter(el => el.textContent.includes("LaPlace"));
+
+            const shipNY = document.getElementById("ship-ny");
+            const shipLA = document.getElementById("ship-la");
+
+            let isNY = true;
+
+            function runAnimation() {
+                if (isNY) {
+                    // NY → Rotterdam
+                    routeNY.style.display = "inline";
+                    routeNY.style.animation = "none";
+                    routeNY.offsetHeight; // Force reflow
+                    routeNY.style.animation = "drawRoute 10s linear forwards";
+                    routeNY.style.opacity = "1";
+
+                    dotNY.style.opacity = "1";
+                    nyLabels.forEach(label => label.style.opacity = "1");
+
+                    shipNY.style.display = "inline";
+                    shipNY.querySelector("animateMotion")?.beginElement();
+
+                    setTimeout(() => {
+                        routeNY.style.opacity = "0";
+                        dotNY.style.opacity = "0";
+                        nyLabels.forEach(label => label.style.opacity = "0");
+                        shipNY.style.display = "none";
+
+                        isNY = false;
+                        runAnimation();
+                    }, 10000);
+                } else {
+                    // LaPlace → Rotterdam
+                    routeLa.style.display = "inline";
+                    routeLa.style.animation = "none";
+                    routeLa.offsetHeight;
+                    routeLa.style.animation = "drawRoute 10s linear forwards";
+                    routeLa.style.opacity = "1";
+
+                    dotLa.style.display = "inline";
+                    dotLa.style.opacity = "1";
+                    laLabels.forEach(label => {
+                        label.style.display = "inline";
+                        label.style.opacity = "1";
+                    });
+
+                    setTimeout(() => {
+                        shipLA.style.display = "inline";
+                        shipLA.style.opacity = "1";
+                        shipLA.querySelector("animateMotion")?.beginElement();
+                    }, 300);
+
+                    setTimeout(() => {
+                        routeLa.style.opacity = "0";
+                        dotLa.style.opacity = "0";
+                        laLabels.forEach(label => {
+                            label.style.opacity = "0";
+                            label.style.display = "none";
+                        });
+                        shipLA.style.display = "none";
+
+                        isNY = true;
+                        runAnimation();
+                    }, 10000);
+                }
+            }
+
+            let triggered = false;
+            window.addEventListener("scroll", () => {
+                const section = document.getElementById("map-section");
+                if (!triggered && section.getBoundingClientRect().top < window.innerHeight / 1.3) {
+                    triggered = true;
+                    runAnimation();
+                }
+            });
+        }); // ← TO było brakujące!
+        document.addEventListener('DOMContentLoaded', function () {
+            const privacyModal = document.getElementById('privacy-modal');
+            const privacyLink = document.querySelector('.privacy-link');
+            // Use querySelector within the privacy modal to target its specific close button
+            const closeBtn = privacyModal.querySelector('.close-modal');
+
+            // Open the privacy modal when the privacy link is clicked
+            privacyLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                privacyModal.style.display = 'flex';
+            });
+
+            // Close the privacy modal when the close button is clicked
+            closeBtn.addEventListener('click', function (e) {
+                privacyModal.style.display = 'none';
+
+            });
+        });
+    </script>
+    <div id="cookieConsent" class="cookie-consent">
+        <p>
+            Ta strona używa plików cookies, aby zapewnić Ci najlepsze doświadczenie.
+            <a href="#" class="privacy-link">Polityka prywatności</a>
+        </p>
+        <button id="cookieAccept" class="btn">Akceptuję</button>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Polityka Prywatności</h2>
+            <div class="privacy-content">
+                <p>
+                    Ta strona wykorzystuje pliki cookies oraz przetwarza dane osobowe zgodnie z obowiązującymi przepisami. Dbamy o Twoją prywatność i stosujemy najlepsze praktyki bezpieczeństwa.
+                </p>
+                <p>
+                    Korzystając z naszej strony, akceptujesz naszą politykę prywatności.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
