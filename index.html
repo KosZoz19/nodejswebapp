@@ -1460,16 +1460,10 @@
                 }
             ];
 
-            let lastRouteId = null;
+            let currentIndex = 0;
 
-            function getRandomRoute() {
-                let availableRoutes = routes.filter(r => r.id !== lastRouteId);
-                return availableRoutes[Math.floor(Math.random() * availableRoutes.length)];
-            }
-
-            function runRandomAnimation() {
-                const route = getRandomRoute();
-                lastRouteId = route.id;
+            function runSequentialAnimation() {
+                const route = routes[currentIndex];
 
                 // Show route and dot
                 route.path.style.display = "inline";
@@ -1500,7 +1494,9 @@
                         label.style.display = "none";
                     });
 
-                    runRandomAnimation(); // repeat with next random
+                    // Move to next route (looping)
+                    currentIndex = (currentIndex + 1) % routes.length;
+                    runSequentialAnimation(); // repeat with next route
                 }, 3000);
             }
 
@@ -1509,7 +1505,7 @@
                 const section = document.getElementById("map-section");
                 if (!triggered && section.getBoundingClientRect().top < window.innerHeight / 1.3) {
                     triggered = true;
-                    runRandomAnimation();
+                    runSequentialAnimation(); // 👈 changed from runRandomAnimation
                 }
             });
         });
