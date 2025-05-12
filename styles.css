@@ -560,11 +560,17 @@ text[text-anchor="middle"]:nth-of-type(5) {
     
 }
 @media (max-width: 768px) {
+    #map-section {
+        position: relative;
+        width: 100%;
+        background-color: #111;
+        overflow: hidden;
+    }
+
     #map-container {
         padding: 0 10px;
         width: 130%;
         overflow: hidden;
-     
         position: relative;
     }
 
@@ -578,16 +584,20 @@ text[text-anchor="middle"]:nth-of-type(5) {
     .route-overlay {
         width: 90%;
         transform: translateX(-4%);
-        
-    }
-
-    #map-section {
-        position: relative;
-        width: 100%;
-        background-color: #111;
-        overflow: hidden;
     }
 }
+@media (min-width: 391px) and (max-width: 768px) {
+
+
+    .world-map {
+        left: 50px;
+    }
+    .route-overlay {
+        width: 92%;
+        transform: translateX(-10%);
+    }
+}
+
 
 .sidebar {
     position: fixed;
