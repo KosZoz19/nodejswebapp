@@ -374,7 +374,7 @@
                 <!-- Ship for New York -->
                 <g id="ship-ny" style="display: none;">
                     <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                        <animateMotion dur="2s" rotate="auto" fill="freeze">
                             <mpath xlink:href="#route-path-ny" />
                         </animateMotion>
                     </image>
@@ -383,7 +383,7 @@
                 <!-- Ship for Indianapolis -->
                 <g id="ship-indianapolis" style="display: none;">
                     <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                        <animateMotion dur="2s" rotate="auto" fill="freeze">
                             <mpath xlink:href="#route-path-indianapolis" />
                         </animateMotion>
                     </image>
@@ -392,7 +392,7 @@
                 <!-- Ship for LaPlace -->
                 <g id="ship-la1" style="display: none;">
                     <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                        <animateMotion dur="2s" rotate="auto" fill="freeze">
                             <mpath xlink:href="#route-path-la" />
                         </animateMotion>
                     </image>
@@ -401,7 +401,7 @@
                 <!-- Ship for LaPlace -->
                 <g id="ship-texas" style="display: none;">
                     <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                        <animateMotion dur="2s" rotate="auto" fill="freeze">
                             <mpath xlink:href="#route-path-texas" />
                         </animateMotion>
                     </image>
@@ -410,7 +410,7 @@
                 <!-- Ship for LaPlace -->
                 <g id="ship-georgia" style="display: none;">
                     <image xlink:href="/images/ship-icon.svg" width="24" height="24">
-                        <animateMotion dur="8s" rotate="auto" fill="freeze">
+                        <animateMotion dur="2s" rotate="auto" fill="freeze">
                             <mpath xlink:href="#route-path-georgia" />
                         </animateMotion>
                     </image>
@@ -1475,7 +1475,7 @@
                 route.path.style.display = "inline";
                 route.path.style.animation = "none";
                 route.path.offsetHeight; // reflow
-                route.path.style.animation = "drawRoute 10s linear forwards";
+                route.path.style.animation = "drawRoute 3s linear forwards";
                 route.path.style.opacity = "1";
 
                 route.dot.style.display = "inline";
@@ -1501,7 +1501,7 @@
                     });
 
                     runRandomAnimation(); // repeat with next random
-                }, 10000);
+                }, 3000);
             }
 
             let triggered = false;
