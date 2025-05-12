@@ -1431,18 +1431,18 @@
                     ship: document.getElementById("ship-ny")
                 },
                 {
+                    id: "georgia",
+                    path: document.getElementById("route-path-georgia"),
+                    dot: document.getElementById("start-dot-georgia"),
+                    labels: Array.from(document.querySelectorAll("text")).filter(el => el.textContent.includes("Georgia")),
+                    ship: document.getElementById("ship-georgia")
+                },
+                {
                     id: "indianapolis",
                     path: document.getElementById("route-path-indianapolis"),
                     dot: document.getElementById("start-dot-indianapolis"),
                     labels: Array.from(document.querySelectorAll("text")).filter(el => el.textContent.includes("Indianapolis")),
                     ship: document.getElementById("ship-indianapolis")
-                },
-                {
-                    id: "la",
-                    path: document.getElementById("route-path-la"),
-                    dot: document.getElementById("start-dot-la"),
-                    labels: Array.from(document.querySelectorAll("text")).filter(el => el.textContent.includes("Los Angeles")),
-                    ship: document.getElementById("ship-la1")
                 },
                 {
                     id: "texas",
@@ -1452,11 +1452,11 @@
                     ship: document.getElementById("ship-texas")
                 },
                 {
-                    id: "georgia",
-                    path: document.getElementById("route-path-georgia"),
-                    dot: document.getElementById("start-dot-georgia"),
-                    labels: Array.from(document.querySelectorAll("text")).filter(el => el.textContent.includes("Georgia")),
-                    ship: document.getElementById("ship-georgia")
+                    id: "la",
+                    path: document.getElementById("route-path-la"),
+                    dot: document.getElementById("start-dot-la"),
+                    labels: Array.from(document.querySelectorAll("text")).filter(el => el.textContent.includes("Los Angeles")),
+                    ship: document.getElementById("ship-la1")
                 }
             ];
 
