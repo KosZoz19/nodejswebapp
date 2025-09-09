@@ -556,23 +556,26 @@ text[text-anchor="middle"]:nth-of-type(5) {
             font-size: 14px;
         }
 
-   .contact-strip{
-  display: grid !important;
-  grid-template-columns: auto auto; /* Row 1: phone | email1  | Row 2: email2 | email3 */
-  align-items: center;
-  gap: 8px 24px;                    /* row / column spacing */
-  background-color: red;            /* keep your red bar */
+.contact-strip{
+  background-color: red;
+  position: relative;
   padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;              /* allow wrapping */
+  gap: 8px 24px;                /* row/col gaps */
+  align-items: center;          /* better icon alignment */
+  justify-content: flex-start;  /* no giant space-between gaps */
+  color: inherit;
+  cursor: pointer;
 }
 
-/* each item stays inline-flex with icon + text */
-.contact-strip .phone,
-.contact-strip .email,
-.contact-strip a{
+/* each item (phone/email) = half width → exactly two per row */
+.contact-strip > *{
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  white-space: nowrap;              /* prevent breaking inside an item */
+  gap: 6px;                     /* icon ↔ text */
+  white-space: nowrap;          /* keep each item on one line */
+  flex: 0 0 calc(50% - 12px);   /* two columns accounting for gap */
 }
     
 }
