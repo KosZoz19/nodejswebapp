@@ -556,7 +556,24 @@ text[text-anchor="middle"]:nth-of-type(5) {
             font-size: 14px;
         }
 
-   
+   .contact-strip{
+  display: grid !important;
+  grid-template-columns: auto auto; /* Row 1: phone | email1  | Row 2: email2 | email3 */
+  align-items: center;
+  gap: 8px 24px;                    /* row / column spacing */
+  background-color: red;            /* keep your red bar */
+  padding: 10px 20px;
+}
+
+/* each item stays inline-flex with icon + text */
+.contact-strip .phone,
+.contact-strip .email,
+.contact-strip a{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;              /* prevent breaking inside an item */
+}
     
 }
 @media (max-width: 768px) {
