@@ -170,28 +170,6 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
-.contact-strip{
-  background-color: red;
-  position: relative;
-  padding: 10px 20px;
-
-  display: grid !important;
-  grid-template-columns: 1fr 1fr;   /* exactly two columns */
-  gap: 8px 24px;                     /* row / column spacing */
-  align-items: center;               /* vertical align icons/text */
-  color: inherit;
-  cursor: pointer;
-}
-
-/* Make whatever the direct children are (a/div/span) align nicely */
-.contact-strip > a,
-.contact-strip > div,
-.contact-strip > span{
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  white-space: nowrap;               /* keep each item on one line */
-}
 .social-pillar {
     position: fixed;
 
