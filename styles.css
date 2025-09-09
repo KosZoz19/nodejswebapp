@@ -174,24 +174,24 @@ header {
   background-color: red;
   position: relative;
   padding: 10px 20px;
-  display: flex;
-  flex-wrap: wrap;              /* allow wrapping */
-  gap: 8px 24px;                /* row/col gaps */
-  align-items: center;          /* better icon alignment */
-  justify-content: flex-start;  /* no giant space-between gaps */
+
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;   /* exactly two columns */
+  gap: 8px 24px;                     /* row / column spacing */
+  align-items: center;               /* vertical align icons/text */
   color: inherit;
   cursor: pointer;
 }
 
-/* each item (phone/email) = half width → exactly two per row */
-.contact-strip > *{
+/* Make whatever the direct children are (a/div/span) align nicely */
+.contact-strip > a,
+.contact-strip > div,
+.contact-strip > span{
   display: inline-flex;
   align-items: center;
-  gap: 6px;                     /* icon ↔ text */
-  white-space: nowrap;          /* keep each item on one line */
-  flex: 0 0 calc(50% - 12px);   /* two columns accounting for gap */
+  gap: 6px;
+  white-space: nowrap;               /* keep each item on one line */
 }
-
 .social-pillar {
     position: fixed;
 
