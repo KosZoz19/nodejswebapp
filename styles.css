@@ -521,6 +521,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     top: 0;
     left: 0;
     width: 100%;
+    display: grid
     z-index: 9999; /* Very high */
 }
 
