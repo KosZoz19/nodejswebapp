@@ -529,7 +529,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     #sidebar-toggle {
         position: fixed;
        top: 210px;
-        right: -20px;
+        right: -15px;
         padding: 8px 16px;
         font-size: 14px;
         z-index: 10001;
