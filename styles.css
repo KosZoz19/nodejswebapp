@@ -532,6 +532,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
         padding: 8px 16px;
         font-size: 14px;
         z-index: 10001;
+        position:relative;
     }
     #sidebar {
       
