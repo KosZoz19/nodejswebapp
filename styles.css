@@ -517,7 +517,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
 /* Sidebar Navigation (fixed on right side) */
 @media screen and (max-width: 480px) {
     .contact-strip {
-    position: static;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
