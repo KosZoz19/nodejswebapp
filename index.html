@@ -43,6 +43,25 @@
 </script>
 <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17586434019"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17586434019'); </script> 
 <!-- Event snippet for Rejestracja conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-17586434019/KluZCJPPw54bEOPf7sFB'}); </script>
+ <!-- Event snippet for Kliknij, aby połączyć conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17586434019/NydpCNS8qqIbEOPf7sFB',
+      'value': 1.0,
+      'currency': 'PLN',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 <body>
     <!--<div id="intro-video-modal" class="video-modal">
