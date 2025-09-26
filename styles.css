@@ -1797,7 +1797,7 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     padding-top: 40px;
-    z-index: 2200;
+    z-index: 10000;
 }
 
     /* Modal Content with red and black theme */
@@ -1836,6 +1836,27 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* Mobile adaptations for modals */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .calling-modal .modal-content {
+        padding-top: 20px;
+    }
+
+    .calling-options {
+        gap: 15px;
+    }
+
+    .calling-options a.btn {
+        padding: 12px;
+        font-size: 16px;
+    }
 }
 
     .calling-options a.btn {
