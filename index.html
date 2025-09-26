@@ -3,6 +3,7 @@
 <html lang="pl">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta property="og:image" content="https://raw.githubusercontent.com/KosZoz19/nodejswebapp/main/images/logo.jpg" />
@@ -121,7 +122,7 @@ function gtag_report_conversion(url) {
 
                 <a href="tel:+48663833802">+48663833802</a>
             </span>
-            <span class="email">
+            <span class="email" onclick="toggleHelpForm()">
                 <i class="fa-solid fa-envelope"></i>
                 <a href="mailto:autkozestanow@gmail.com">autkozestanow@gmail.com</a>
             </span>
@@ -148,15 +149,17 @@ function gtag_report_conversion(url) {
         </a>
 
     </div>
-    <!-- <div id="calling-modal" class="calling-modal" style="display: none;">
-         <div class="modal-content">
+    <div id="calling-modal" class="calling-modal" style="display: none;">
+          <div class="modal-content" data-aos="flip-up">
              <span class="close-calling-modal" onclick="closeCallingOptions()">&times;</span>
              <h2>Zadzwoń do nas</h2>
              <p>Wybierz opcję kontaktu:</p>
              <div class="calling-options">
-                 <a href="tel:+48663833774" class="btn">Zadzwoń teraz</a>
-                 <a href="sms:+48663833774" class="btn">Wyślij SMS</a>
-                 <a href="mailto:autkozestanow@gmail.com" class="btn">Wyślij e-mail</a>
+                 <a href="tel:+48663833774" class="btn" onclick="closeCallingOptions(); gtag_report_conversion('tel:+48663833774')">Zadzwoń +48 663 833 774</a>
+                 <a href="tel:+48663833802" class="btn" onclick="closeCallingOptions(); gtag_report_conversion('tel:+48663833802')">Zadzwoń +48 663 833 802</a>
+                 <a href="https://wa.me/48663833774" class="btn" onclick="closeCallingOptions(); gtag_report_conversion('https://wa.me/48663833774')">WhatsApp</a>
+                 <a href="sms:+48663833774" class="btn" onclick="closeCallingOptions(); gtag_report_conversion('sms:+48663833774')">Wyślij SMS</a>
+                 <a href="mailto:autkozestanow@gmail.com" class="btn" onclick="closeCallingOptions(); gtag_report_conversion('mailto:autkozestanow@gmail.com')">Wyślij e-mail</a>
 
              </div>
          </div>
@@ -188,7 +191,7 @@ function gtag_report_conversion(url) {
     </section>
     <!-- Modal Markup -->
     <div id="importModal" class="modal" style="display: none;">
-        <div class="modal-content">
+        <div class="modal-content" data-aos="zoom-in">
             <span class="close-modal">&times;</span>
             <h2>Proces Importu i Nasz Importer</h2>
             <div class="modal-body">
@@ -207,7 +210,7 @@ function gtag_report_conversion(url) {
 
     <!-- "O nas" Modal -->
     <div id="about-modal" class="modal" style="display: none;">
-        <div class="modal-content">
+        <div class="modal-content" data-aos="fade-up">
             <span class="close-about-modal">&times;</span>
             <h2>O nas</h2>
             <p>
@@ -921,7 +924,7 @@ function gtag_report_conversion(url) {
     <!-- Modals (hidden by default) -->
     <!-- Modal for Article 1 -->
     <div id="post1-modal" class="modal" style="display: none;">
-        <div class="modal-content">
+        <div class="modal-content" data-aos="zoom-in-up">
             <span class="close-modal" data-modal="post1-modal">&times;</span>
             <h2>Dlaczego warto importować samochody z USA?</h2>
             <div class="modal-body">
@@ -937,7 +940,7 @@ function gtag_report_conversion(url) {
 
     <!-- Modal for Article 2 -->
     <div id="post2-modal" class="modal" style="display: none;">
-        <div class="modal-content">
+        <div class="modal-content" data-aos="slide-left">
             <span class="close-modal" data-modal="post2-modal">&times;</span>
             <h2>Jak przeprowadzić import samochodu krok po kroku?</h2>
             <div class="modal-body">
@@ -957,7 +960,7 @@ function gtag_report_conversion(url) {
 
     <!-- Modal for Article 3 -->
     <div id="post3-modal" class="modal" style="display: none;">
-        <div class="modal-content">
+        <div class="modal-content" data-aos="slide-right">
             <span class="close-modal" data-modal="post3-modal">&times;</span>
             <h2>Najlepsze modele do importu z USA</h2>
             <div class="modal-body">
@@ -1014,7 +1017,7 @@ function gtag_report_conversion(url) {
     </div>
 
     <div id="emailModal" class="modal" style="display:none;">
-        <div class="modal-content">
+        <div class="modal-content" data-aos="slide-up">
             <span class="close-email-modal">&times;</span>
             <h2>Kontakt emailowy</h2>
             <p>Napisz do nas na adres: <strong>autkozestanow@gmail.com</strong></p>
@@ -1612,6 +1615,10 @@ function gtag_report_conversion(url) {
             });
         });
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <div id="cookieConsent" class="cookie-consent">
         <p>
             Ta strona używa plików cookies, aby zapewnić Ci najlepsze doświadczenie.
@@ -1622,7 +1629,7 @@ function gtag_report_conversion(url) {
 
     <!-- Privacy Policy Modal -->
     <div id="privacy-modal" class="modal" style="display: none;">
-        <div class="modal-content">
+        <div class="modal-content" data-aos="fade-in">
             <span class="close-modal">&times;</span>
             <h2>Polityka Prywatności</h2>
             <div class="privacy-content">
