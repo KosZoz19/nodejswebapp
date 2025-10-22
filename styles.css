@@ -942,7 +942,7 @@ section {
     /* Large, full-height hero */
     min-height: 100vh; /* fill entire viewport */
     /* Background image */
-    background: url('/images/13124.jpg') no-repeat center center;
+    background: url('images/13124.jpg') no-repeat center center;
     background-size: cover;
     /* Parallax effect on larger screens */
     background-attachment: fixed;
@@ -2300,7 +2300,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100vh; /* Full viewport height */
-    background: url('/images/auta.jpg') no-repeat center center;
+    background: url('images/auta.jpg') no-repeat center center;
     background-size: cover;
     z-index: -1; /* Place behind other content */
 }
