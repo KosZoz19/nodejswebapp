@@ -973,6 +973,8 @@ section {
     .hero-content h2 {
         font-size: 48px;
         margin-bottom: 20px;
+        margin-top: 80px;
+
     }
     .hero-content p {
         font-size: 24px;
@@ -2731,6 +2733,7 @@ footer {
     .social-pillar {
         width: 40px;
         padding: 8px 4px;
+        margin-top: 70px;
     }
 
         .social-pillar a img {
