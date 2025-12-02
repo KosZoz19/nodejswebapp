@@ -1,0 +1,21 @@
+{
+  "name": "Autko ze Stanów",
+  "short_name": "Autko",
+  "description": "Import samochodów z USA i Kanady",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1b1b1b",
+  "theme_color": "#e50914",
+  "icons": [
+    {
+      "src": "images/Logo_Autko.cdr.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "images/Logo_Autko.cdr.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

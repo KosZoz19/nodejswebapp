@@ -6,13 +6,50 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta property="og:image" content="https://raw.githubusercontent.com/KosZoz19/nodejswebapp/main/images/Logo_Autko.cdr.svg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:title" content="Autko ze Stanów - Import aut z USA i Kanady" />
-<meta property="og:description" content="Sprowadzamy auta z USA i Kanady: wycena, zakup, transport, cło, akcyza." />
-<meta property="og:url" content="https://autkozestanow.pl/" />
-<meta property="og:type" content="website" />
+    <meta name="theme-color" content="#e50914">
+    <link rel="manifest" href="manifest.json">
+    <meta name="description" content="Profesjonalny import samochodów z USA i Kanady. Oferujemy kompleksowe usługi: wycena, zakup, transport, odprawa celna i rejestracja. Ponad 2500 sprowadzonych pojazdów. Skontaktuj się z nami już dziś!">
+    <meta name="keywords" content="import aut USA, samochody z Ameryki, sprowadzanie aut z USA, autko ze stanów, samochody z Kanady, odprawa celna, rejestracja aut">
+    <meta name="author" content="Autko ze Stanów">
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="https://raw.githubusercontent.com/KosZoz19/nodejswebapp/main/images/Logo_Autko.cdr.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="Autko ze Stanów - Import aut z USA i Kanady" />
+    <meta property="og:description" content="Sprowadzamy auta z USA i Kanady: wycena, zakup, transport, cło, akcyza. Ponad 2500 pojazdów sprowadzonych." />
+    <meta property="og:url" content="https://autkozestanow.pl/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Autko ze Stanów - Import aut z USA i Kanady">
+    <meta name="twitter:description" content="Profesjonalny import samochodów z USA i Kanady. Kompleksowe usługi od wyceny po rejestrację.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/KosZoz19/nodejswebapp/main/images/Logo_Autko.cdr.svg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoDealer",
+      "name": "Autko ze Stanów",
+      "description": "Profesjonalny import samochodów z USA i Kanady",
+      "url": "https://autkozestanow.pl/",
+      "logo": "https://raw.githubusercontent.com/KosZoz19/nodejswebapp/main/images/Logo_Autko.cdr.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Skręcona 7",
+        "addressLocality": "Kraków",
+        "addressCountry": "PL"
+      },
+      "telephone": "+48663833774",
+      "email": "autkozestanow@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61574995092512",
+        "https://www.instagram.com/autkozestanow?igsh=MTQ3bWxmYjNncGN3dw%3D%3D&utm_source=qr",
+        "https://www.tiktok.com/@_autkozestanow_?_r=1&_t=ZN-91CSNHWJp14",
+        "https://t.me/AutkozeStanow"
+      ],
+      "areaServed": ["USA", "Kanada", "Polska"],
+      "serviceType": "Import samochodów"
+    }
+    </script>
 
     <!-- EmailJS SDK loaded FIRST -->
     <script type="text/javascript"
@@ -44,7 +81,18 @@
 
   gtag('config', 'AW-17586434019');
 </script>
-<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17586434019"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17586434019'); </script> 
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17586434019"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17586434019'); </script>
+<!-- Hotjar Tracking Code -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:YOUR_HOTJAR_SITE_ID,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 <!-- Event snippet for Rejestracja conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-17586434019/KluZCJPPw54bEOPf7sFB'}); </script>
  <!-- Event snippet for Kliknij, aby połączyć conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
@@ -235,7 +283,7 @@ function gtag_report_conversion(url) {
     <!-- Modal Markup -->
     <div id="importModal" class="modal" style="display: none;">
         <div class="modal-content" data-aos="zoom-in">
-            <span class="close-modal">&times;</span>
+            <span class="close-modal" aria-label="Zamknij modal" role="button">&times;</span>
             <h2>Proces Importu i Nasz Importer</h2>
             <div class="modal-body">
                 <p>
@@ -460,7 +508,7 @@ function gtag_report_conversion(url) {
     </section>
     <section id="map-section">
         <div id="map-container" style="position: relative;">
-            <img src="images/BlankMap-World_gray.svg.png" alt="Mapa świata" class="world-map" style="width: 100%; height: auto;" />
+            <img src="images/BlankMap-World_gray.svg.png" alt="Mapa świata" class="world-map" style="width: 100%; height: auto;" loading="lazy" />
 
             <svg class="route-overlay" width="100%" height="100%" viewBox="0 0 1200 514" xmlns="http://www.w3.org/2000/svg">
                 <!-- Route: New York to Rotterdam -->
@@ -1661,6 +1709,15 @@ function gtag_report_conversion(url) {
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
     </script>
     <div id="cookieConsent" class="cookie-consent">
         <p>

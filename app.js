@@ -1,38 +1,23 @@
-process.env.PATH += ';C:\\WINDOWS\\SysWOW64';
-console.log('Updated PATH:', process.env.PATH);
-
 const express = require('express');
 const path = require('path');
 
-
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-const { exec } = require('child_process');
+// Middleware
+app.use(express.json());
+app.use(express.static(path.join(__dirname)));
 
-exec('C:\\WINDOWS\\SysWOW64\\cscript.exe //Nologo "C:\\Users\\Erazer\\Desktop\\test1.vbs"', (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error executing cscript: ${error}`);
-        return;
-    }
-    console.log(`Output: ${stdout}`);
-});
-
-
-
-
-
-// Serve static files from the 'public' folder
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Define a route for the homepage
+// Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// API endpoint to query all autos from the database
+// API for summary (placeholder)
+app.get('/api/summary', (req, res) => {
+  res.json({ summary: 'Sample summary data' });
+});
 
-// Start the server
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
