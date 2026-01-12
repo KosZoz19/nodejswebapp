@@ -4,7 +4,7 @@
 
 
 :root {
-    --primary-color: #e50914; /* Bold red accent */
+    --primary-color: #800020; /* Bold red accent */
     --secondary-color: #f8f9fa; /* Light color for contrast */
     --background-color: #1b1b1b; /* Dark background */
     --text-color: #ffffff; /* White text */
@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     animation: backgroundShift 10s ease-in-out infinite alternate;
+    font-size: 18px;
 }
 
 @keyframes backgroundShift {
@@ -46,9 +47,9 @@ body {
     .video-modal video {
         max-width: 90%;
         max-height: 90vh;
-        border: 4px solid #e50914;
+        border: 4px solid #800020;
         border-radius: 10px;
-        box-shadow: 0 0 20px #e50914;
+        box-shadow: 0 0 20px #800020;
     }
 .footer-social-icons {
     display: flex;
@@ -76,7 +77,7 @@ header {
     width: 100%;
     padding: 10px 30px;
     background: linear-gradient(135deg, rgba(27,27,27,0.8), rgba(27,27,27,0.6));
-    border-bottom: 1px solid rgba(229, 9, 20, 0.5);
+    border-bottom: 1px solid rgba(128, 0, 32, 0.5);
     z-index: 1000;
     display: flex;
     justify-content: center; /* Centers the branding */
@@ -96,7 +97,7 @@ header {
 }
 
 .contact-strip {
-    background-color: red;
+    background-color: #800020;
     position:relative;
     padding: 10px 20px;
     display: flex;
@@ -124,7 +125,7 @@ header {
 .modal-content {
     background: rgba(27, 27, 27, 0.95);
     backdrop-filter: blur(10px);
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     padding: 20px;
     border-radius: 8px;
     color: #fff;
@@ -132,7 +133,7 @@ header {
     width: 90%;
     text-align: center;
     position: relative;
-    box-shadow: 0 8px 32px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 8px 32px rgba(128, 0, 32, 0.3);
 }
 
 .close-email-modal {
@@ -203,7 +204,7 @@ bottom:10px;
 }
 
 .social-pillar a {
-    color: #e50914; /* red like your brand, or pick another standout color */
+    color: #800020; /* red like your brand, or pick another standout color */
     font-size: 24px;
     transition: transform 0.2s ease, color 0.2s ease;
 }
@@ -301,7 +302,7 @@ bottom:10px;
     font-size: 32px;
     margin: 0;
     color: #ffffff;
-    text-shadow: 0 0 8px #e50914;
+    text-shadow: 0 0 8px #800020;
 }
 
 @keyframes ring {
@@ -316,12 +317,12 @@ bottom:10px;
 
 @keyframes neonBlink {
     0%, 100% {
-        text-shadow: 0 0 8px #e50914, 0 0 16px #e50914, 0 0 24px #e50914;
+        text-shadow: 0 0 8px #800020, 0 0 16px #800020, 0 0 24px #800020;
         opacity: 1;
     }
 
     50% {
-        text-shadow: 0 0 2px #e50914;
+        text-shadow: 0 0 2px #800020;
         opacity: 0.8;
     }
 }
@@ -443,7 +444,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     .importer-text-content h2 {
         font-size: 32px;
         margin-bottom: 20px;
-        text-shadow: 0 0 5px #e50914; /* Subtle neon glow effect in red */
+        text-shadow: 0 0 5px #800020; /* Subtle neon glow effect in red */
     }
 
     /* Paragraph styling */
@@ -458,7 +459,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     .importer-text-content h3 {
         font-size: 24px;
         margin-bottom: 10px;
-        color: #e50914; /* Red accent for subheadings */
+        color: #800020; /* Red accent for subheadings */
     }
 
     /* List styling */
@@ -477,7 +478,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
         /* Red bullet for each list item */
         .importer-text-content li::before {
             content: "•";
-            color: #e50914;
+            color: #800020;
             position: absolute;
             left: 0;
             top: 0;
@@ -489,7 +490,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     right: 20px;
     height: 60px; /* Bigger button */
     padding: 0 20px; /* More horizontal padding */
-    background: radial-gradient(circle, #e50914, #a10b0b);
+    background: radial-gradient(circle, #800020, #5a0014);
     border: none;
     border-radius: 30px;
     color: #ffffff;
@@ -506,7 +507,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
 }
 
     .sidebar-toggle:hover {
-        background: radial-gradient(circle, #ff4b4b, #e50914);
+        background: radial-gradient(circle, #b24d5a, #800020);
         transform: scale(1.05);
     }
 
@@ -618,9 +619,9 @@ text[text-anchor="middle"]:nth-of-type(5) {
     height: 100vh; /* full viewport height */
     overflow-y: auto; /* allow scroll if content overflows */
     background: linear-gradient(180deg, #1b1b1b, #000000);
-    border-left: 3px solid #e50914;
+    border-left: 3px solid #800020;
     padding: 80px 20px 20px; /* leave space for the toggle button */
-    box-shadow: -2px 0 10px rgba(229, 9, 20, 0.7);
+    box-shadow: -2px 0 10px rgba(128, 0, 32, 0.7);
     transition: right 0.3s ease;
     z-index: 2100;
 }
@@ -647,7 +648,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
             }
 
                 .sidebar ul li a:hover {
-                    color: #e50914;
+                    color: #800020;
                 }
             /* Style for social media links in the sidebar */
             .sidebar ul li.social {
@@ -666,7 +667,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
                 }
 
                     .sidebar ul li.social a:hover {
-                        color: #e50914;
+                        color: #800020;
                     }
 /* Importer Intro Section */
 .importer-intro {
@@ -685,7 +686,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
         font-size: 32px;
         margin-bottom: 15px;
         color: #ffffff;
-        text-shadow: 0 0 5px #e50914;
+        text-shadow: 0 0 5px #800020;
     }
 
     .importer-intro-content p {
@@ -706,7 +707,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
 
 .feature-item {
     background: #2a2a2a;
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.6);
@@ -720,8 +721,8 @@ text[text-anchor="middle"]:nth-of-type(5) {
 
 .feature-item:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.4);
-    border-color: #ff4b4b;
+    box-shadow: 0 10px 20px rgba(128, 0, 32, 0.4);
+    border-color: #b24d5a;
 }
 
 .icon-line {
@@ -809,8 +810,8 @@ section {
     max-width: 600px;
     width: 90%;
     text-align: center;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
 }
 
 /* Close Button for the Modal */
@@ -826,7 +827,7 @@ section {
 
     .close-about-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
     /* Summary Modal Container */
 .modal {
@@ -874,8 +875,8 @@ section {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
     position: relative;
     /* Soft fade and scale effect */
     transform: scale(0.9);
@@ -906,7 +907,7 @@ section {
 
     .close-summary-modal:hover {
         transform: scale(1.3);
-        color: #e50914;
+        color: #800020;
     }
 
 /* Title styling */
@@ -914,7 +915,7 @@ section {
     font-size: 28px;
     margin-bottom: 20px;
     color: #ffffff;
-    text-shadow: 0 0 5px #e50914;
+    text-shadow: 0 0 5px #800020;
 }
 
 /* Summary content styling */
@@ -934,7 +935,7 @@ section {
     }
 
         #summary-content p strong {
-            color: #e50914;
+            color: #800020;
             margin-right: 5px;
         }
 /* Hero Section (Responsive Header Image) */
@@ -1024,8 +1025,8 @@ section {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
     position: relative;
     text-align: left;
     animation: fadeIn 0.4s ease forwards, scaleIn 0.4s ease forwards;
@@ -1044,7 +1045,7 @@ section {
 
     .close-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
 
 /* Modal Body */
@@ -1108,7 +1109,7 @@ section {
     .new-autos h2 {
         font-size: 36px;
         margin-bottom: 30px;
-        color: #e50914; /* Red accent for heading */
+        color: #800020; /* Red accent for heading */
     }
 
 /* Global Base */
@@ -1128,7 +1129,7 @@ html, body {
 
     .auto-filters h2 {
         font-size: 36px;
-        color: #e50914;
+        color: #800020;
         margin-bottom: 20px;
     }
 
@@ -1153,7 +1154,7 @@ html, body {
     .filter-group select {
         padding: 8px 10px;
         font-size: 16px;
-        border: 2px solid #e50914;
+        border: 2px solid #800020;
         border-radius: 4px;
         background: #2a2a2a;
         color: #ffffff;
@@ -1165,7 +1166,7 @@ html, body {
     font-size: 18px;
     font-weight: 600;
     color: #ffffff;
-    background-color: #e50914;
+    background-color: #800020;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1195,7 +1196,7 @@ html, body {
 /* Auto Card */
 .auto-card {
     background: #2a2a2a;
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
@@ -1222,7 +1223,7 @@ html, body {
     .card-info h3 {
         font-size: 24px;
         margin-bottom: 10px;
-        color: #e50914;
+        color: #800020;
     }
 
     .card-info p {
@@ -1261,7 +1262,7 @@ html, body {
     .opinie h2 {
         font-size: 32px;
         margin-bottom: 30px;
-        text-shadow: 0 0 5px #e50914;
+        text-shadow: 0 0 5px #800020;
     }
 
 /* Container hides overflow so only a row is visible */
@@ -1343,7 +1344,7 @@ html, body {
 .opinia-more {
     display: inline-block;
     margin-top: 5px;
-    color: #e50914;
+    color: #800020;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1369,7 +1370,7 @@ html, body {
     width: 220px; /* smaller card width */
     scroll-snap-align: start; /* snap at the start of each card */
     background: #2a2a2a;
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 8px;
     text-align: left;
     padding: 15px;
@@ -1441,7 +1442,7 @@ html, body {
 .opinia-more {
     display: inline-block;
     margin-top: 5px;
-    color: #e50914;
+    color: #800020;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1450,7 +1451,7 @@ html, body {
         text-decoration: underline;
     }
 .car-brands {
-    background: #e50914; /* Red background matching your site's accent */
+    background: #800020; /* Red background matching your site's accent */
     padding: 60px 20px;
     text-align: center;
     color: #ffffff;
@@ -1615,7 +1616,7 @@ html, body {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: #e50914; /* Red accent color */
+    background: rgba(0, 0, 0, 0.6); /* Match social pillar */
     color: #fff;
     padding: 12px 16px;
     border-radius: 30px;
@@ -1625,6 +1626,7 @@ html, body {
 }
 
     .help-bubble:hover {
+        background: rgba(0, 0, 0, 0.8);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
@@ -1645,7 +1647,7 @@ html, body {
     width: 300px;
     background: #1b1b1b; /* Dark background */
     color: #fff;
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.6);
     padding: 0;
@@ -1653,7 +1655,7 @@ html, body {
 
 /***** HEADER INSIDE THE FORM *****/
 .help-form-header {
-    background: #e50914;
+    background: #800020;
     color: #fff;
     padding: 10px;
     border-top-left-radius: 6px;
@@ -1719,7 +1721,7 @@ html, body {
     .help-form-body button[type="submit"] {
         width: 100%;
         padding: 10px;
-        background: #e50914;
+        background: #800020;
         color: #fff;
         border: none;
         border-radius: 4px;
@@ -1762,8 +1764,8 @@ html, body {
         border-radius: 10px;
         width: 90%;
         max-width: 600px;
-        border: 2px solid #e50914; /* Red border */
-        box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+        border: 2px solid #800020; /* Red border */
+        box-shadow: 0 0 10px #800020, 0 0 20px #800020;
         position: relative;
         transform: scale(0.9);
         animation: scaleIn 0.4s ease forwards;
@@ -1784,8 +1786,8 @@ html, body {
 
         #opinion-modal .close-opinion-modal:hover {
             transform: scale(1.2);
-            color: #e50914;
-            text-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+            color: #800020;
+            text-shadow: 0 0 10px #800020, 0 0 20px #800020;
         }
 /* Calling Options Modal Container */
 .calling-modal {
@@ -1809,8 +1811,8 @@ html, body {
         border-radius: 10px;
         width: 90%;
         max-width: 500px;
-        border: 2px solid #e50914;
-        box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+        border: 2px solid #800020;
+        box-shadow: 0 0 10px #800020, 0 0 20px #800020;
         text-align: center;
         animation: fadeIn 0.4s ease forwards, scaleIn 0.4s ease forwards;
         position: relative;
@@ -1829,7 +1831,7 @@ html, body {
 
     .close-calling-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
 
 /* Calling Options */
@@ -2209,7 +2211,7 @@ html, body {
     .footer-column h3 {
         font-size: 18px;
         margin-bottom: 10px;
-        color: #e50914; /* Red accent for headings */
+        color: #800020; /* Red accent for headings */
         text-transform: uppercase;
     }
 
@@ -2226,7 +2228,7 @@ html, body {
     }
 
         .footer-column a:hover {
-            color: #e50914; /* Hover accent color */
+            color: #800020; /* Hover accent color */
         }
 
 /* Navigation Links in Column 2 */
@@ -2246,7 +2248,7 @@ html, body {
         }
 
             .footer-links li a:hover {
-                color: #e50914;
+                color: #800020;
             }
 
 /* Social Icons in Column 3 */
@@ -2270,8 +2272,8 @@ html, body {
     }
 
         .social-icons a:hover {
-            background: #e50914;
-            border-color: #e50914;
+            background: #800020;
+            border-color: #800020;
             color: #ffffff;
         }
 
@@ -2446,8 +2448,8 @@ footer {
     align-items: center;
     z-index: 2000;
     /* Neon border around the entire modal screen (optional) */
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914, 0 0 30px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020, 0 0 30px #800020;
 }
 
 /* Neon-Style Modal Content */
@@ -2460,8 +2462,8 @@ footer {
     text-align: center;
     position: relative;
     /* Neon glow around the content box */
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914, 0 0 30px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020, 0 0 30px #800020;
 }
 
 /* Close Button (Neon Style) */
@@ -2474,13 +2476,13 @@ footer {
     cursor: pointer;
     transition: transform 0.3s ease;
     /* Neon glow */
-    text-shadow: 0 0 5px #e50914, 0 0 10px #e50914;
+    text-shadow: 0 0 5px #800020, 0 0 10px #800020;
 }
 
     .close-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
-        text-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+        color: #800020;
+        text-shadow: 0 0 10px #800020, 0 0 20px #800020;
     }
 .auctions {
     background: linear-gradient(135deg, #1b1b1b, #333333);
@@ -2495,7 +2497,7 @@ footer {
         color: var(--primary-color); /* Your red accent color */
         text-transform: uppercase;
         letter-spacing: 1px;
-        text-shadow: 0 0 8px rgba(229, 9, 20, 0.8);
+        text-shadow: 0 0 8px rgba(128, 0, 32, 0.8);
     }
 
 .auction-grid {
@@ -2563,7 +2565,7 @@ footer {
     border-radius: 4px;
     margin-bottom: 15px;
     /* Optional glow around the image */
-    box-shadow: 0 0 10px rgba(229, 9, 20, 0.6), 0 0 20px rgba(229, 9, 20, 0.4);
+    box-shadow: 0 0 10px rgba(128, 0, 32, 0.6), 0 0 20px rgba(128, 0, 32, 0.4);
 }
 
 /* Modal Specs List */
@@ -2586,7 +2588,7 @@ footer {
 #modal-car-price {
     font-size: 18px;
     color: #ffffff;
-    text-shadow: 0 0 5px #e50914;
+    text-shadow: 0 0 5px #800020;
 }
 .importer-intro,
 .importer-features,
@@ -2618,8 +2620,8 @@ footer {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
     position: relative;
     text-align: left;
     animation: fadeIn 0.4s ease forwards, scaleIn 0.4s ease forwards;
@@ -2637,14 +2639,14 @@ footer {
 
     .close-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
 
 .modal-content h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #e50914;
-    text-shadow: 0 0 5px #e50914;
+    color: #800020;
+    text-shadow: 0 0 5px #800020;
 }
 
 .modal-body p {
@@ -2769,7 +2771,7 @@ footer {
         }
 
         .cookie-consent .btn {
-            background-color: #e50914;
+            background-color: #800020;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -2780,18 +2782,18 @@ footer {
         }
 
             .cookie-consent .btn:hover {
-                background-color: #ff2d2d;
+                background-color: #b24d5a;
             }
 
         .cookie-consent a {
-            color: #e50914;
+            color: #800020;
             text-decoration: underline;
         }
 }
 
 
 :root {
-    --primary-color: #e50914; /* Bold red accent */
+    --primary-color: #800020; /* Bold red accent */
     --secondary-color: #f8f9fa; /* Light color for contrast */
     --background-color: #1b1b1b; /* Dark background */
     --text-color: #ffffff; /* White text */
@@ -2834,9 +2836,9 @@ body {
     .video-modal video {
         max-width: 90%;
         max-height: 90vh;
-        border: 4px solid #e50914;
+        border: 4px solid #800020;
         border-radius: 10px;
-        box-shadow: 0 0 20px #e50914;
+        box-shadow: 0 0 20px #800020;
     }
 .footer-social-icons {
     display: flex;
@@ -2864,7 +2866,7 @@ header {
     width: 100%;
     padding: 10px 30px;
     background: linear-gradient(135deg, rgba(27,27,27,0.8), rgba(27,27,27,0.6));
-    border-bottom: 1px solid rgba(229, 9, 20, 0.5);
+    border-bottom: 1px solid rgba(128, 0, 32, 0.5);
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -2892,7 +2894,7 @@ header {
 }
 
 .contact-strip {
-    background-color: rgba(229, 9, 20, 0.9);
+    background-color: rgba(128, 0, 32, 0.9);
     position: relative;
     padding: 15px 25px;
     display: flex;
@@ -2925,7 +2927,7 @@ header {
 .modal-content {
     background: rgba(27, 27, 27, 0.95);
     backdrop-filter: blur(10px);
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     padding: 20px;
     border-radius: 8px;
     color: #fff;
@@ -2933,7 +2935,7 @@ header {
     width: 90%;
     text-align: center;
     position: relative;
-    box-shadow: 0 8px 32px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 8px 32px rgba(128, 0, 32, 0.3);
 }
 
 .close-email-modal {
@@ -2994,6 +2996,7 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
 }
 .social-pillar {
     position: fixed;
@@ -3022,7 +3025,7 @@ header {
 }
 
 .social-pillar a {
-    color: #e50914; /* red like your brand, or pick another standout color */
+    color: #800020; /* red like your brand, or pick another standout color */
     font-size: 24px;
     transition: transform 0.2s ease, color 0.2s ease;
 }
@@ -3106,7 +3109,7 @@ header {
     font-size: 32px;
     margin: 0;
     color: #ffffff;
-    text-shadow: 0 0 8px #e50914;
+    text-shadow: 0 0 8px #800020;
 }
 
 @keyframes ring {
@@ -3121,12 +3124,12 @@ header {
 
 @keyframes neonBlink {
     0%, 100% {
-        text-shadow: 0 0 8px #e50914, 0 0 16px #e50914, 0 0 24px #e50914;
+        text-shadow: 0 0 8px #800020, 0 0 16px #800020, 0 0 24px #800020;
         opacity: 1;
     }
 
     50% {
-        text-shadow: 0 0 2px #e50914;
+        text-shadow: 0 0 2px #800020;
         opacity: 0.8;
     }
 }
@@ -3237,6 +3240,26 @@ text[text-anchor="middle"]:nth-of-type(5) {
     margin-bottom: 50px; /* Spacing from the next section */
 }
 
+.parking-info {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(27, 27, 27, 0.9); /* Semi-transparent dark background */
+    padding: 20px 40px;
+    color: #ffffff;
+    border-radius: 10px;
+    z-index: 10;
+    text-align: center;
+}
+
+.office-info {
+    background: #1b1b1b; /* Dark background to match your site */
+    padding: 60px 20px;
+    color: #ffffff;
+    margin-bottom: 50px; /* Spacing from the next section */
+}
+
 /* Inner content area, centered with a max width */
 .importer-text-content {
 
@@ -3244,11 +3267,33 @@ text[text-anchor="middle"]:nth-of-type(5) {
     text-align: left; /* Left-align the paragraphs for readability */
 }
 
+.parking-info-content {
+    text-align: center; /* Center the heading */
+}
+
+.office-info-content {
+    margin: 0 auto;
+    text-align: center; /* Center the heading */
+    max-width: 600px;
+}
+
     /* Section heading */
     .importer-text-content h2 {
         font-size: 32px;
         margin-bottom: 20px;
-        text-shadow: 0 0 5px #e50914; /* Subtle neon glow effect in red */
+        text-shadow: 0 0 5px #800020; /* Subtle neon glow effect in red */
+    }
+
+    .parking-info-content h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 5px #800020; /* Subtle neon glow effect in burgundy */
+    }
+
+    .office-info-content h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 5px #800020; /* Subtle neon glow effect in burgundy */
     }
 
     /* Paragraph styling */
@@ -3263,7 +3308,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     .importer-text-content h3 {
         font-size: 24px;
         margin-bottom: 10px;
-        color: #e50914; /* Red accent for subheadings */
+        color: #800020; /* Red accent for subheadings */
     }
 
     /* List styling */
@@ -3282,7 +3327,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
         /* Red bullet for each list item */
         .importer-text-content li::before {
             content: "•";
-            color: #e50914;
+            color: #800020;
             position: absolute;
             left: 0;
             top: 0;
@@ -3294,7 +3339,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     right: 20px;
     height: 60px; /* Bigger button */
     padding: 0 20px; /* More horizontal padding */
-    background: radial-gradient(circle, #e50914, #a10b0b);
+    background: rgba(0, 0, 0, 0.6);
     border: none;
     border-radius: 30px;
     color: #ffffff;
@@ -3311,7 +3356,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
 }
 
     .sidebar-toggle:hover {
-        background: radial-gradient(circle, #ff4b4b, #e50914);
+        background: rgba(0, 0, 0, 0.8);
         transform: scale(1.05);
     }
 
@@ -3321,6 +3366,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: #800020;
 }
 
 .arrow {
@@ -3370,11 +3416,11 @@ text[text-anchor="middle"]:nth-of-type(5) {
 
         .contact-strip .phone,
         .contact-strip .email {
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .contact-strip a {
-            font-size: 14px;
+            font-size: 16px;
         }
 
 
@@ -3406,6 +3452,17 @@ text[text-anchor="middle"]:nth-of-type(5) {
         width: 90%;
         transform: translateX(-4%);
     }
+
+    .parking-info {
+       padding: 10px 20px;
+        top: 70%;
+        left: 40%;
+    }
+
+    .parking-info-content h2 {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
 }
 @media (min-width: 391px) and (max-width: 768px) {
 
@@ -3428,9 +3485,9 @@ text[text-anchor="middle"]:nth-of-type(5) {
     height: 100vh; /* full viewport height */
     overflow-y: auto; /* allow scroll if content overflows */
     background: linear-gradient(180deg, #1b1b1b, #000000);
-    border-left: 3px solid #e50914;
+    border-left: 3px solid #800020;
     padding: 80px 20px 20px; /* leave space for the toggle button */
-    box-shadow: -2px 0 10px rgba(229, 9, 20, 0.7);
+    box-shadow: -2px 0 10px rgba(128, 0, 32, 0.7);
     transition: right 0.3s ease;
     z-index: 2100;
 }
@@ -3457,7 +3514,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
             }
 
                 .sidebar ul li a:hover {
-                    color: #e50914;
+                    color: #800020;
                 }
             /* Style for social media links in the sidebar */
             .sidebar ul li.social {
@@ -3476,7 +3533,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
                 }
 
                     .sidebar ul li.social a:hover {
-                        color: #e50914;
+                        color: #800020;
                     }
 /* Importer Intro Section */
 .importer-intro {
@@ -3495,7 +3552,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
         font-size: 32px;
         margin-bottom: 15px;
         color: #ffffff;
-        text-shadow: 0 0 5px #e50914;
+        text-shadow: 0 0 5px #800020;
     }
 
     .importer-intro-content p {
@@ -3516,7 +3573,7 @@ text[text-anchor="middle"]:nth-of-type(5) {
 
 .feature-item {
     background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.7);
@@ -3532,8 +3589,8 @@ text[text-anchor="middle"]:nth-of-type(5) {
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(229, 9, 20, 0.4);
-    border-color: #ff4b4b;
+    box-shadow: 0 8px 16px rgba(128, 0, 32, 0.4);
+    border-color: #b24d5a;
 }
 
 .icon-line {
@@ -3622,8 +3679,8 @@ section {
     max-width: 600px;
     width: 90%;
     text-align: center;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
 }
 
 /* Close Button for the Modal */
@@ -3639,7 +3696,7 @@ section {
 
     .close-about-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
     /* Summary Modal Container */
 .modal {
@@ -3687,8 +3744,8 @@ section {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
     position: relative;
     /* Soft fade and scale effect */
     transform: scale(0.9);
@@ -3719,7 +3776,7 @@ section {
 
     .close-summary-modal:hover {
         transform: scale(1.3);
-        color: #e50914;
+        color: #800020;
     }
 
 /* Title styling */
@@ -3727,7 +3784,7 @@ section {
     font-size: 28px;
     margin-bottom: 20px;
     color: #ffffff;
-    text-shadow: 0 0 5px #e50914;
+    text-shadow: 0 0 5px #800020;
 }
 
 /* Summary content styling */
@@ -3747,7 +3804,7 @@ section {
     }
 
         #summary-content p strong {
-            color: #e50914;
+            color: #800020;
             margin-right: 5px;
         }
 /* Hero Section (Responsive Header Image) */
@@ -3812,7 +3869,7 @@ section {
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -3820,7 +3877,7 @@ section {
     .btn:hover {
         background: linear-gradient(45deg, #ff6b6b, var(--primary-color));
         transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 8px 25px rgba(229, 9, 20, 0.5);
+        box-shadow: 0 8px 25px rgba(128, 0, 32, 0.5);
     }
 
     .btn::before {
@@ -3859,8 +3916,8 @@ section {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
     position: relative;
     text-align: left;
     animation: fadeIn 0.4s ease forwards, scaleIn 0.4s ease forwards;
@@ -3879,7 +3936,7 @@ section {
 
     .close-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
 
 /* Modal Body */
@@ -3943,7 +4000,7 @@ section {
     .new-autos h2 {
         font-size: 36px;
         margin-bottom: 30px;
-        color: #e50914; /* Red accent for heading */
+        color: #800020; /* Red accent for heading */
     }
 
 /* Global Base */
@@ -3963,7 +4020,7 @@ html, body {
 
     .auto-filters h2 {
         font-size: 36px;
-        color: #e50914;
+        color: #800020;
         margin-bottom: 20px;
     }
 
@@ -3988,7 +4045,7 @@ html, body {
     .filter-group select {
         padding: 8px 10px;
         font-size: 16px;
-        border: 2px solid #e50914;
+        border: 2px solid #800020;
         border-radius: 4px;
         background: #2a2a2a;
         color: #ffffff;
@@ -4000,7 +4057,7 @@ html, body {
     font-size: 18px;
     font-weight: 600;
     color: #ffffff;
-    background-color: #e50914;
+    background-color: #800020;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -4030,7 +4087,7 @@ html, body {
 /* Auto Card */
 .auto-card {
     background: #2a2a2a;
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
@@ -4057,7 +4114,7 @@ html, body {
     .card-info h3 {
         font-size: 24px;
         margin-bottom: 10px;
-        color: #e50914;
+        color: #800020;
     }
 
     .card-info p {
@@ -4096,7 +4153,7 @@ html, body {
     .opinie h2 {
         font-size: 32px;
         margin-bottom: 30px;
-        text-shadow: 0 0 5px #e50914;
+        text-shadow: 0 0 5px #800020;
     }
 
 /* Container hides overflow so only a row is visible */
@@ -4178,7 +4235,7 @@ html, body {
 .opinia-more {
     display: inline-block;
     margin-top: 5px;
-    color: #e50914;
+    color: #800020;
     text-decoration: none;
     font-weight: 600;
 }
@@ -4204,7 +4261,7 @@ html, body {
     width: 220px; /* smaller card width */
     scroll-snap-align: start; /* snap at the start of each card */
     background: #2a2a2a;
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 8px;
     text-align: left;
     padding: 15px;
@@ -4276,7 +4333,7 @@ html, body {
 .opinia-more {
     display: inline-block;
     margin-top: 5px;
-    color: #e50914;
+    color: #800020;
     text-decoration: none;
     font-weight: 600;
 }
@@ -4285,7 +4342,7 @@ html, body {
         text-decoration: underline;
     }
 .car-brands {
-    background: #e50914; /* Red background matching your site's accent */
+    background: #800020; /* Red background matching your site's accent */
     padding: 60px 20px;
     text-align: center;
     color: #ffffff;
@@ -4450,7 +4507,7 @@ html, body {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: #e50914; /* Red accent color */
+    background: #800020; /* Red accent color */
     color: #fff;
     padding: 12px 16px;
     border-radius: 30px;
@@ -4480,7 +4537,7 @@ html, body {
     width: 300px;
     background: #1b1b1b; /* Dark background */
     color: #fff;
-    border: 2px solid #e50914;
+    border: 2px solid #800020;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.6);
     padding: 0;
@@ -4488,7 +4545,7 @@ html, body {
 
 /***** HEADER INSIDE THE FORM *****/
 .help-form-header {
-    background: #e50914;
+    background: #800020;
     color: #fff;
     padding: 10px;
     border-top-left-radius: 6px;
@@ -4554,7 +4611,7 @@ html, body {
     .help-form-body button[type="submit"] {
         width: 100%;
         padding: 10px;
-        background: #e50914;
+        background: #800020;
         color: #fff;
         border: none;
         border-radius: 4px;
@@ -4597,8 +4654,8 @@ html, body {
         border-radius: 10px;
         width: 90%;
         max-width: 600px;
-        border: 2px solid #e50914; /* Red border */
-        box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+        border: 2px solid #800020; /* Red border */
+        box-shadow: 0 0 10px #800020, 0 0 20px #800020;
         position: relative;
         transform: scale(0.9);
         animation: scaleIn 0.4s ease forwards;
@@ -4619,8 +4676,8 @@ html, body {
 
         #opinion-modal .close-opinion-modal:hover {
             transform: scale(1.2);
-            color: #e50914;
-            text-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+            color: #800020;
+            text-shadow: 0 0 10px #800020, 0 0 20px #800020;
         }
 /* Calling Options Modal Container */
 .calling-modal {
@@ -4644,8 +4701,8 @@ html, body {
         border-radius: 10px;
         width: 90%;
         max-width: 500px;
-        border: 2px solid #e50914;
-        box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+        border: 2px solid #800020;
+        box-shadow: 0 0 10px #800020, 0 0 20px #800020;
         text-align: center;
         animation: fadeIn 0.4s ease forwards, scaleIn 0.4s ease forwards;
         position: relative;
@@ -4664,7 +4721,7 @@ html, body {
 
     .close-calling-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
 
 /* Calling Options */
@@ -5044,7 +5101,7 @@ html, body {
     .footer-column h3 {
         font-size: 18px;
         margin-bottom: 10px;
-        color: #e50914; /* Red accent for headings */
+        color: #800020; /* Red accent for headings */
         text-transform: uppercase;
     }
 
@@ -5061,7 +5118,7 @@ html, body {
     }
 
         .footer-column a:hover {
-            color: #e50914; /* Hover accent color */
+            color: #800020; /* Hover accent color */
         }
 
 /* Navigation Links in Column 2 */
@@ -5081,7 +5138,7 @@ html, body {
         }
 
             .footer-links li a:hover {
-                color: #e50914;
+                color: #800020;
             }
 
 /* Social Icons in Column 3 */
@@ -5105,8 +5162,8 @@ html, body {
     }
 
         .social-icons a:hover {
-            background: #e50914;
-            border-color: #e50914;
+            background: #800020;
+            border-color: #800020;
             color: #ffffff;
         }
 
@@ -5281,8 +5338,8 @@ footer {
     align-items: center;
     z-index: 2000;
     /* Neon border around the entire modal screen (optional) */
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914, 0 0 30px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020, 0 0 30px #800020;
 }
 
 /* Neon-Style Modal Content */
@@ -5295,8 +5352,8 @@ footer {
     text-align: center;
     position: relative;
     /* Neon glow around the content box */
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914, 0 0 30px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020, 0 0 30px #800020;
 }
 
 /* Close Button (Neon Style) */
@@ -5309,13 +5366,13 @@ footer {
     cursor: pointer;
     transition: transform 0.3s ease;
     /* Neon glow */
-    text-shadow: 0 0 5px #e50914, 0 0 10px #e50914;
+    text-shadow: 0 0 5px #800020, 0 0 10px #800020;
 }
 
     .close-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
-        text-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+        color: #800020;
+        text-shadow: 0 0 10px #800020, 0 0 20px #800020;
     }
 .auctions {
     background: linear-gradient(135deg, #1b1b1b, #333333);
@@ -5330,7 +5387,7 @@ footer {
         color: var(--primary-color); /* Your red accent color */
         text-transform: uppercase;
         letter-spacing: 1px;
-        text-shadow: 0 0 8px rgba(229, 9, 20, 0.8);
+        text-shadow: 0 0 8px rgba(128, 0, 32, 0.8);
     }
 
 .auction-grid {
@@ -5397,7 +5454,7 @@ footer {
     border-radius: 4px;
     margin-bottom: 15px;
     /* Optional glow around the image */
-    box-shadow: 0 0 10px rgba(229, 9, 20, 0.6), 0 0 20px rgba(229, 9, 20, 0.4);
+    box-shadow: 0 0 10px rgba(128, 0, 32, 0.6), 0 0 20px rgba(128, 0, 32, 0.4);
 }
 
 /* Modal Specs List */
@@ -5420,7 +5477,7 @@ footer {
 #modal-car-price {
     font-size: 18px;
     color: #ffffff;
-    text-shadow: 0 0 5px #e50914;
+    text-shadow: 0 0 5px #800020;
 }
 .importer-intro,
 .importer-features,
@@ -5452,8 +5509,8 @@ footer {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    border: 2px solid #e50914;
-    box-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+    border: 2px solid #800020;
+    box-shadow: 0 0 10px #800020, 0 0 20px #800020;
     position: relative;
     text-align: left;
     animation: fadeIn 0.4s ease forwards, scaleIn 0.4s ease forwards;
@@ -5471,14 +5528,14 @@ footer {
 
     .close-modal:hover {
         transform: scale(1.2);
-        color: #e50914;
+        color: #800020;
     }
 
 .modal-content h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #e50914;
-    text-shadow: 0 0 5px #e50914;
+    color: #800020;
+    text-shadow: 0 0 5px #800020;
 }
 
 .modal-body p {
@@ -5593,7 +5650,7 @@ footer {
         }
 
         .cookie-consent .btn {
-            background-color: #e50914;
+            background-color: #800020;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -5604,11 +5661,11 @@ footer {
         }
 
             .cookie-consent .btn:hover {
-                background-color: #ff2d2d;
+                background-color: #b24d5a;
             }
 
         .cookie-consent a {
-            color: #e50914;
+            color: #800020;
             text-decoration: underline;
         }
 }
